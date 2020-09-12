@@ -7,7 +7,7 @@ Find Euler's number using factorials
 #include <stdio.h>
 #include <stdlib.h>
 
-double calculate_factorial(int n);
+int calculate_factorial(int n);
 double calculate_euler_number(int n);
 
 int main(void) {
@@ -18,7 +18,7 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
-double calculate_factorial(int n) {
+int calculate_factorial(int n) {
     if (n == 0) return 1;
     else if (n == 1) return n;
     else {
@@ -31,7 +31,7 @@ double calculate_euler_number(int n) {
     int numbers = 0;
     for (int i = 0; i < n; i++) {
         numbers++;
-        sum += 1 / calculate_factorial(numbers);
+        sum += 1 / (double) calculate_factorial(numbers);
     }
     return sum + 1;
 }
