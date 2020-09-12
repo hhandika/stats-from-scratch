@@ -8,11 +8,11 @@ Find Euler's number using factorials
 #include <stdlib.h>
 
 double calculate_factorial(int n);
-double calculate_eulers(int n);
+double calculate_euler_number(int n);
 
 int main(void) {
-    int n = 40;
-    double sum = calculate_eulers(n);
+    int n = 10;
+    double sum = calculate_euler_number(n);
     printf("%.4lf\n", sum);
 
     return EXIT_SUCCESS;
@@ -26,7 +26,7 @@ double calculate_factorial(int n) {
     }     
 }
 
-double calculate_eulers(int n) {
+double calculate_euler_number(int n) {
     double sum;
     int numbers = 0;
     for (int i = 0; i < n; i++) {
