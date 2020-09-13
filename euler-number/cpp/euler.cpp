@@ -12,6 +12,7 @@ class Euler {
 private:
     int counters = 1;
     double sum = 0;
+    
 public:
     int max;
     int calculate_factorial(int n);
