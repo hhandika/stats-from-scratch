@@ -19,8 +19,7 @@ int main(void) {
 }
 
 int calculate_factorial(int n) {
-    if (n == 0) return 1;
-    else if (n == 1) return n;
+    if (n == 0 || n == 1) return 1;
     else {
         return n * calculate_factorial(n - 1);
     }     
@@ -28,10 +27,10 @@ int calculate_factorial(int n) {
 
 double calculate_euler_number(int n) {
     double sum;
-    int numbers = 0;
-    for (int i = 0; i < n; i++) {
+    int numbers = 1;
+    while (numbers < n) {
+        sum += 1.0 / (double) calculate_factorial(numbers);
         numbers++;
-        sum += 1 / (double) calculate_factorial(numbers);
     }
     return sum + 1;
 }
