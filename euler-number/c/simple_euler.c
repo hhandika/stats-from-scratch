@@ -13,7 +13,7 @@ double calculate_euler_number(int n);
 int main(void) {
     int n = 10;
     double sum = calculate_euler_number(n);
-    printf("%.4lf\n", sum);
+    printf("%.8lf\n", sum);
 
     return EXIT_SUCCESS;
 }

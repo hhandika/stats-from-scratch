@@ -8,14 +8,14 @@ fn main() {
     let n = 10;
     let sum = calculate_euler_number(n);
 
-    println!("Euler number {.4}", sum);
+    println!("Euler number {:.8}", sum);
 }
 
 fn calculate_factorial(n: i64) -> i64 {
     if n == 0 || n == 1 {
-        return 1;
+        1
     } else {
-        return n * calculate_factorial(n - 1)
+        n * calculate_factorial(n - 1)
     }
 }
 
