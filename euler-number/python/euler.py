@@ -1,3 +1,10 @@
+"""
+Heru Handika
+16 September 2020
+Euler's number implementation on python
+Using more verbose while loop.
+"""
+
 def calculate_factorial(n):
     if n == 0 or n == 1:
         return 1
