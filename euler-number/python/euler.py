@@ -5,13 +5,13 @@ Euler's number implementation on python
 Using more verbose while loop.
 """
 
-def calculate_factorial(n):
+def calculate_factorial(n: int) -> int:
     if n == 0 or n == 1:
         return 1
     else:
         return n * calculate_factorial(n-1)
 
-def calculate_euler_number(n):
+def calculate_euler_number(n: int) -> float:
     counts = 1
     total = 0.0
     while counts < n:
