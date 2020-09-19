@@ -1,6 +1,6 @@
 """
 Heru Handika
-22 September 2020
+12 September 2020
 Euler's number finder.
 Using for loop
 """
