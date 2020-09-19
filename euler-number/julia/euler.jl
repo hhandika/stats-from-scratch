@@ -1,11 +1,12 @@
-"""
+#=
 Heru Handika
 18 September 2020
-Euler's number
-"""
+Euler's number implementation in julia
+=#
+
 using Printf
 
-function calculate_factorial(n::Int)
+function calculate_factorial(n)
     if n == 0 || n == 1
         return 1
     else
