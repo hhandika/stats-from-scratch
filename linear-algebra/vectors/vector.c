@@ -64,12 +64,16 @@ void add_vectors(int x[], int y[], size_t arr_size) {
 }
 
 int * multiply_vectors(int x[], int y[], size_t arr_size) {
-    int * result = (int *) malloc(sizeof(int));
+    int * presult = (int *) malloc(arr_size * sizeof(int));
+    if (presult == 0) {
+        perror("\x1b[0;31Error: \x1b[0mFailed to allocate memory\n");
+        exit(EXIT_FAILURE);
+    }
     
     for (size_t i = 0; i < arr_size; i++) {
-        result[i] = x[i] * y[i];
+        presult[i] = x[i] * y[i];
     }
-    return result;
+    return presult;
 }
 
 int sum_vectors(int vec[], size_t arr_size) {
