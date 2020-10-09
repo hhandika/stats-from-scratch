@@ -10,7 +10,7 @@ from typing import List
 def main():
     x: List[int] = [1, 2, 3, 4, 5]
     y: List[int] = [10, 20, 30, 40, 50]
-    
+
     add_res: List[int] = add_vectors(x, y)
     print(f"Vector addtion: {add_res}")
 
@@ -29,6 +29,9 @@ def main():
     mean_x: float = mean_vectors(x)
     print(f"Mean vector x: {mean_x}")
 
+    dot: int = calculate_dot_product(x, y)
+    print(f"Dot product: {dot}")
+
 def add_vectors(x: List[int], y: List[int]) -> List[int]:
     return [i + j for i, j in zip(x, y) ]
 
@@ -42,10 +45,13 @@ def multiply_by_scalar(vec: List[int], scale: int) -> List[int]:
     return [scale * i for i in vec]
 
 def sum_vector(vec: List[int]) -> int:
-    return sum([i for i in vec])
+    return sum(i for i in vec)
 
 def mean_vectors(vec: List[int]) -> float:
     return float(sum_vector(vec))/len(vec)
+
+def calculate_dot_product(x: List[int], y: List[int]) -> int:
+    return sum(multiply_vector(x, y))
 
 if __name__ == "__main__":
     main()
