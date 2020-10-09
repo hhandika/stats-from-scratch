@@ -4,9 +4,9 @@ Heru handika
 Vector operation using python
 standard library.
 """
-from typing import List, Tuple
-#%%
+from typing import List
 
+#%%
 def main():
     x: List[int] = [1, 2, 3, 4, 5]
     y: List[int] = [10, 20, 30, 40, 50]
