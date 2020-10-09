@@ -31,9 +31,9 @@ int main(void) {
     printf("Vector addition: ");
     print_vectors(add_res, MAX);
 
-    int * multiply_res = multiply_vectors(x, y, MAX);
+    int * mul_res = multiply_vectors(x, y, MAX);
     printf("Vector multiplication: ");
-    print_vectors(multiply_res, MAX);
+    print_vectors(mul_res, MAX);
 
     // Print the sum x and y
     int sum_x = sum_vectors(x, MAX);
@@ -47,7 +47,7 @@ int main(void) {
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
 
     FREE_MEM(add_res);
-    FREE_MEM(multiply_res);
+    FREE_MEM(mul_res);
     return 0;
 }
 
