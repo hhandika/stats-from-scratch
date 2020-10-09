@@ -32,6 +32,9 @@ def main():
     dot: int = calculate_dot_product(x, y)
     print(f"Dot product: {dot}")
 
+    sum_of_sq_x: float = calculate_sum_of_square(x)
+    print(f"Sum of square x: {sum_of_sq_x}")
+
 def add_vectors(x: List[int], y: List[int]) -> List[int]:
     return [i + j for i, j in zip(x, y) ]
 
@@ -52,6 +55,9 @@ def mean_vectors(vec: List[int]) -> float:
 
 def calculate_dot_product(x: List[int], y: List[int]) -> int:
     return sum(multiply_vector(x, y))
+
+def calculate_sum_of_square(vec: List[int]) -> float:
+    return float(calculate_dot_product(vec, vec))
 
 if __name__ == "__main__":
     main()
