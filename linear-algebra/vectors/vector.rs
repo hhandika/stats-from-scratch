@@ -7,8 +7,6 @@ Vector addition and multiplication in rust
 fn main() {
     let x: Vec<i32> = vec![1, 2, 3, 4, 5];
     let y: Vec<i32> = vec![10, 20, 30, 40, 50];
-    let z: Vec<i32> = vec![1,2,3];
-    let v: Vec<i32> = vec![4,5,6];
 
     println!("Vector addition: {:?}", 
         add_two_vectors(&x, &y));
@@ -25,9 +23,9 @@ fn main() {
     println!("Mean y: {:.2}", mean_vectors(&y));
 
     println!("Dot product x & y: {:.2}", 
-        calculate_dot_product(&z, &v));
+        calculate_dot_product(&x, &y));
     println!("Sum of square x: {:.2}", 
-        calculate_sum_of_square(&z));
+        calculate_sum_of_square(&x));
 }
 
 fn add_two_vectors(x: &Vec<i32>, y: &Vec<i32>) -> Vec<i32>{
@@ -83,5 +81,5 @@ fn calculate_dot_product(x: &Vec<i32>, y: &Vec<i32>) -> f64 {
 }
 
 fn calculate_sum_of_square(vec: &Vec<i32>) -> f64 {
-    calculate_dot_product(x,x)
+    calculate_dot_product(vec, vec)
 }
