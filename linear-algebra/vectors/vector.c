@@ -12,9 +12,12 @@ Mean
 #include <stdlib.h>
 
 #define MAX 5
+#define FREE_MEM(p) free_mem((void**)&p)
 
 void print_vectors(int * vec, size_t vec_size);
-void add_vectors(int * x, int * y, size_t arr_size) ;
+void allocate_mem(int **arr, size_t size);
+void free_mem(void **pointer);
+int * add_vectors(int * x, int * y, size_t arr_size);
 int * multiply_vectors(int * x, int * y, size_t arr_size);
 int sum_vectors(int * vec, size_t arr_size);
 float mean_vectors(int sum, size_t arr_size);
@@ -24,13 +27,13 @@ int main(void) {
     int x[MAX] = {1, 2, 3, 4, 5};
     int y[MAX] = {10, 20, 30, 40, 50};
 
+    int * add_res = add_vectors(x, y, MAX);
     printf("Vector addition: ");
-    add_vectors(x, y, MAX);
+    print_vectors(add_res, MAX);
 
-    int * presult = multiply_vectors(x, y, MAX);
-
+    int * multiply_res = multiply_vectors(x, y, MAX);
     printf("Vector multiplication: ");
-    print_vectors(presult, MAX);
+    print_vectors(multiply_res, MAX);
 
     // Print the sum x and y
     int sum_x = sum_vectors(x, MAX);
@@ -43,8 +46,8 @@ int main(void) {
 
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
 
-    free(presult);
-    presult = NULL;
+    FREE_MEM(add_res);
+    FREE_MEM(multiply_res);
     return 0;
 }
 
@@ -55,21 +58,33 @@ void print_vectors(int vec[], size_t vec_size) {
     printf("\n");
 }
 
-void add_vectors(int x[], int y[], size_t arr_size) {
-    int result[MAX];
-    for (size_t i = 0; i < arr_size; i++) {
-                result[i] = x[i] + y[i]; 
+void allocate_mem(int **arr, size_t size) {
+    *arr = (int *)malloc(size * sizeof(int));
+    if (*arr == 0) {
+        printf("\x1b[0;31Error: \x1b[0mFailed to allocate memory\n");
     }
-    print_vectors(result, arr_size);
+}
+
+void free_mem(void **pointer) {
+    // Avoid double free memory.
+    if (pointer != NULL && *pointer != NULL) {
+        free(*pointer);
+        *pointer = NULL;
+    }
+}
+
+int * add_vectors(int x[], int y[], size_t arr_size) {
+    int * presult = NULL;
+    allocate_mem(&presult, arr_size);
+    for (size_t i = 0; i < arr_size; i++) {
+                presult[i] = x[i] + y[i]; 
+    }
+    return presult;
 }
 
 int * multiply_vectors(int x[], int y[], size_t arr_size) {
-    int * presult = (int *) malloc(arr_size * sizeof(int));
-    if (presult == 0) {
-        perror("\x1b[0;31Error: \x1b[0mFailed to allocate memory\n");
-        exit(EXIT_FAILURE);
-    }
-    
+    int * presult = NULL;
+    allocate_mem(&presult, arr_size);
     for (size_t i = 0; i < arr_size; i++) {
         presult[i] = x[i] * y[i];
     }
