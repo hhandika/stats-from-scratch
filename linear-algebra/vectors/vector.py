@@ -55,7 +55,7 @@ def mean_vectors(vec: List[int]) -> float:
 
 def calculate_dot_product(x: List[int], y: List[int]) -> int:
     return sum(multiply_vector(x, y))
-
+ 
 def calculate_sum_of_square(vec: List[int]) -> float:
     return float(calculate_dot_product(vec, vec))
 
