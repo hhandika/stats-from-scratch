@@ -6,6 +6,8 @@ Addition
 Multiplication
 Summation
 Mean
+Dot product
+Sum of square
 */
 
 #include <stdio.h>
@@ -22,7 +24,8 @@ int * add_vectors(int * x, int * y, size_t arr_size);
 int * multiply_vectors(int * x, int * y, size_t arr_size);
 int sum_vectors(int * vec, size_t arr_size);
 float mean_vectors(int sum, size_t arr_size);
-int sum_for_vec(int vec[], size_t arr_size);
+float calculate_dot_product(int * x, int * y, size_t arr_size);
+float calculate_sum_of_square(int * x, size_t arr_size);
 
 int main(void) {
     int x[MAX] = {1, 2, 3, 4, 5};
@@ -46,6 +49,15 @@ int main(void) {
     float mean_y = mean_vectors(sum_y, MAX);
 
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
+
+    printf("Dot product: %.2f\n", 
+        calculate_dot_product(x,y, MAX));
+
+    printf("Sum of square x: %.2f\n",
+        calculate_sum_of_square(x, MAX));
+    
+    printf("Sum of square y: %.2f\n",
+        calculate_sum_of_square(y, MAX));
 
     FREE_MEM(add_res);
     FREE_MEM(mul_res);
@@ -111,4 +123,22 @@ float mean_vectors(int sum, size_t arr_size) {
     mean = (float) sum / arr_size;
 
     return mean;
+}
+
+/*
+* Dot product measure how far the x is to y
+* This is will be use to calculate sum of square
+*/
+float calculate_dot_product(int * x, int * y, size_t arr_size) {
+    float sum = 0;
+    for (size_t i = 0; i < arr_size; i++) {
+        sum += x[i] * y[i];
+    }
+    return sum;
+}
+
+float calculate_sum_of_square(int * x, size_t arr_size) {
+    float sum = calculate_dot_product(x, x, arr_size);
+    
+    return sum;
 }
