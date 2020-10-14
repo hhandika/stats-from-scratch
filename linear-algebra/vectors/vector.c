@@ -10,12 +10,13 @@ Mean
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #define MAX 5
 #define FREE_MEM(p) free_mem((void**)&p)
 
 void print_vectors(int * vec, size_t vec_size);
-void allocate_mem(int **arr, size_t size);
+int allocate_mem(int **arr, size_t size);
 void free_mem(void **pointer);
 int * add_vectors(int * x, int * y, size_t arr_size);
 int * multiply_vectors(int * x, int * y, size_t arr_size);
@@ -58,11 +59,13 @@ void print_vectors(int vec[], size_t vec_size) {
     printf("\n");
 }
 
-void allocate_mem(int **arr, size_t size) {
+int allocate_mem(int **arr, size_t size) {
     *arr = (int *)malloc(size * sizeof(int));
     if (*arr == 0) {
         printf("\x1b[0;31Error: \x1b[0mFailed to allocate memory\n");
+        exit(EXIT_FAILURE);
     }
+    return 0;
 }
 
 void free_mem(void **pointer) {
