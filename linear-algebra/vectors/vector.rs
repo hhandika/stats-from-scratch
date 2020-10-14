@@ -26,6 +26,8 @@ fn main() {
         calculate_dot_product(&x, &y));
     println!("Sum of square x: {:.2}", 
         calculate_sum_of_square(&x));
+    println!("Sum of square y: {:.2}", 
+        calculate_sum_of_square(&y));
 }
 
 fn add_two_vectors(x: &Vec<i32>, y: &Vec<i32>) -> Vec<i32>{
