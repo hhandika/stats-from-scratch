@@ -72,7 +72,7 @@ fn mean_vectors(vec: &Vec<i32>) -> f64 {
     mean
 }
 
-// Dot product is the measure of far is the x to y
+// Dot product is the measure of how far two vectors are
 // Will be used to calculate sum of squares
 fn calculate_dot_product(x: &Vec<i32>, y: &Vec<i32>) -> f64 {
     let mut sum: f64 = 0.0;
