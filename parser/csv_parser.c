@@ -7,6 +7,16 @@ Work on parsing csv file
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX_LEN 1000
+#define MAX_LINE 1000
+
+typedef struct {
+    char * id;
+    char * species;
+} Species;
+
+Species shrews[MAX_LINE];
+
 int main (void) {
     int ch;
     FILE * fp;
@@ -14,11 +24,9 @@ int main (void) {
     
     fp = fopen(filename, "r");
     if (fp == NULL) {
-        perror("Failed to open the file\n");
+        perror("Failed to open the file");
         exit(EXIT_FAILURE);
     }
-
-
     while ((ch = getc(fp)) != EOF) {
         printf("%c", ch);
     }
