@@ -43,8 +43,8 @@ def substract_vector(x: List[int], y: List[int]) -> List[int]:
 def multiply_vector(x: List[int], y: List[int]) -> List[int]:
     return [i * j for i, j in zip(x, y) ]
 
-def multiply_by_scalar(vec: List[int], scale: int) -> List[int]:
-    return [scale * i for i in vec]
+def multiply_by_scalar(vec: List[int], scalar: int) -> List[int]:
+    return [scalar * i for i in vec]
 
 def sum_vector(vec: List[int]) -> int:
     return sum(i for i in vec)
