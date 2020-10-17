@@ -13,6 +13,7 @@ Sum of square
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <math.h> // Use -lm compiler flag
 
 #define MAX 5
 #define FREE_MEM(p) free_mem((void**)&p)
@@ -21,11 +22,15 @@ void print_vectors(int * vec, size_t vec_size);
 int allocate_mem(int **arr, size_t size);
 void free_mem(void **pointer);
 int * add_vectors(int * x, int * y, size_t arr_size);
+int * substract_vectors(int x[], int y[], size_t arr_size);
 int * multiply_vectors(int * x, int * y, size_t arr_size);
 int sum_vectors(int * vec, size_t arr_size);
 float mean_vectors(int sum, size_t arr_size);
 float calculate_dot_product(int * x, int * y, size_t arr_size);
 float calculate_sum_of_square(int * x, size_t arr_size);
+float compute_magnitude(int * x, size_t arr_size);
+float compute_vector_distance(int * x, int * y, size_t arr_size);
+
 
 int main(void) {
     int x[MAX] = {1, 2, 3, 4, 5};
@@ -58,6 +63,12 @@ int main(void) {
     
     printf("Sum of square y: %.2f\n",
         calculate_sum_of_square(y, MAX));
+
+    printf("Magnitude x: %.4f\n",
+        compute_magnitude(x, MAX));
+    
+    printf("X and Y distance: %.4f\n",
+        compute_vector_distance(x, y, MAX));
 
     FREE_MEM(add_res);
     FREE_MEM(mul_res);
@@ -93,6 +104,15 @@ int * add_vectors(int x[], int y[], size_t arr_size) {
     allocate_mem(&presult, arr_size);
     for (size_t i = 0; i < arr_size; i++) {
                 presult[i] = x[i] + y[i]; 
+    }
+    return presult;
+}
+
+int * substract_vectors(int x[], int y[], size_t arr_size) {
+    int * presult = NULL;
+    allocate_mem(&presult, arr_size);
+    for (size_t i = 0; i < arr_size; i++) {
+                presult[i] = x[i] - y[i]; 
     }
     return presult;
 }
@@ -141,4 +161,14 @@ float calculate_sum_of_square(int * x, size_t arr_size) {
     float sum = calculate_dot_product(x, x, arr_size);
     
     return sum;
+}
+
+// Using sum of square to compute magnitude
+float compute_magnitude(int * x, size_t arr_size) {
+    return sqrt(calculate_sum_of_square(x, arr_size));
+}
+
+// Calculate vector distance
+float compute_vector_distance(int * x, int * y, size_t arr_size) {
+    return compute_magnitude(substract_vectors(x, y, MAX), MAX);
 }
