@@ -3,11 +3,14 @@ Heru Handika
 6 September 2020
 Vector operation includes:
 Addition
+Substraction
 Multiplication
 Summation
 Mean
 Dot product
 Sum of square
+Magnitude
+Distance
 */
 
 #include <stdio.h>
@@ -15,7 +18,14 @@ Sum of square
 #include <assert.h>
 #include <math.h> // Use -lm compiler flag
 
+/* 
+* Pre-defined array size using macro
+* this way I will only pass one single array size
+* when passing two arrays. 
+*/
 #define MAX 5
+
+// Shorten function call to free memory.
 #define FREE_MEM(p) free_mem((void**)&p)
 
 void print_vectors(int * vec, size_t vec_size);
@@ -26,11 +36,10 @@ int * substract_vectors(int x[], int y[], size_t arr_size);
 int * multiply_vectors(int * x, int * y, size_t arr_size);
 int sum_vectors(int * vec, size_t arr_size);
 float mean_vectors(int sum, size_t arr_size);
-float calculate_dot_product(int * x, int * y, size_t arr_size);
-float calculate_sum_of_square(int * x, size_t arr_size);
+float compute_dot_product(int * x, int * y, size_t arr_size);
+float compute_sum_of_square(int * x, size_t arr_size);
 float compute_magnitude(int * x, size_t arr_size);
 float compute_vector_distance(int * x, int * y, size_t arr_size);
-
 
 int main(void) {
     int x[MAX] = {1, 2, 3, 4, 5};
@@ -56,13 +65,13 @@ int main(void) {
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
 
     printf("Dot product: %.2f\n", 
-        calculate_dot_product(x,y, MAX));
+        compute_dot_product(x,y, MAX));
 
     printf("Sum of square x: %.2f\n",
-        calculate_sum_of_square(x, MAX));
+        compute_sum_of_square(x, MAX));
     
     printf("Sum of square y: %.2f\n",
-        calculate_sum_of_square(y, MAX));
+        compute_sum_of_square(y, MAX));
 
     printf("Magnitude x: %.4f\n",
         compute_magnitude(x, MAX));
@@ -138,18 +147,14 @@ int sum_vectors(int vec[], size_t arr_size) {
 }
 
 float mean_vectors(int sum, size_t arr_size) {
-    float mean = 0.0;
-
-    mean = (float) sum / arr_size;
-
-    return mean;
+    return (float) sum / arr_size;
 }
 
 /*
 * Dot product measures how far two vectors are
-* It will be use to calculate sum of square
+* It will be use to compute sum of square
 */
-float calculate_dot_product(int * x, int * y, size_t arr_size) {
+float compute_dot_product(int * x, int * y, size_t arr_size) {
     float sum = 0;
     for (size_t i = 0; i < arr_size; i++) {
         sum += x[i] * y[i];
@@ -157,18 +162,16 @@ float calculate_dot_product(int * x, int * y, size_t arr_size) {
     return sum;
 }
 
-float calculate_sum_of_square(int * x, size_t arr_size) {
-    float sum = calculate_dot_product(x, x, arr_size);
-    
-    return sum;
+float compute_sum_of_square(int * x, size_t arr_size) {
+    return compute_dot_product(x, x, arr_size);
 }
 
 // Using sum of square to compute magnitude
 float compute_magnitude(int * x, size_t arr_size) {
-    return sqrt(calculate_sum_of_square(x, arr_size));
+    return sqrt(compute_sum_of_square(x, arr_size));
 }
 
-// Calculate vector distance
+// compute vector distance
 float compute_vector_distance(int * x, int * y, size_t arr_size) {
     return compute_magnitude(substract_vectors(x, y, MAX), MAX);
 }
