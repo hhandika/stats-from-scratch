@@ -11,8 +11,8 @@ Matrix operation
 #define M 5
 
 void print_matrix(int (* arr)[N], size_t); 
-void get_row(int (* arr)[N], size_t, size_t);
-void get_column(int (* arr)[N], size_t, size_t);
+void print_row(int (* arr)[N], size_t, size_t);
+void print_column(int (* arr)[N], size_t, size_t);
 
 int main(void) {
     int matrix[M][N] = {{1, 2, 3, 4, 5},
@@ -23,8 +23,8 @@ int main(void) {
     
     printf("No. rows: %d, cols: %d\n", M, N);
     print_matrix(matrix, M);
-    get_row(matrix, M, 0);
-    get_column(matrix, M, 1);
+    print_row(matrix, M, 0);
+    print_column(matrix, M, 1);
 
     return EXIT_SUCCESS;
 }
@@ -39,14 +39,14 @@ void print_matrix(int (* arr)[N], size_t m) {
     }
 }
 
-void get_row(int (* arr)[N], size_t m, size_t row) {
+void print_row(int (* arr)[N], size_t m, size_t row) {
     printf("\nRow %ld: ", row + 1);
     for (size_t rows = 0; rows < m; rows++)
         printf("%d ", arr[rows][row]);
     printf("\n");
 }
 
-void get_column(int (* arr)[N], size_t m, size_t column) {
+void print_column(int (* arr)[N], size_t m, size_t column) {
     printf("Column %ld: ", column + 1);
     for (size_t cols = 0; cols < N; cols++) {
             printf("%d ", arr[cols][column]);
