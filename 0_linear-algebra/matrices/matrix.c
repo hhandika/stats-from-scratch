@@ -33,11 +33,12 @@ void print_matrix(int * arr, size_t m, size_t n) {
         for (size_t j = 0; j < n; j++) {
             printf("%d ", *((arr + i * n) + j));
         }
+        printf("\n");
     }
-    printf("\n");
 }
 
 void get_row(int * arr, size_t m) {
+    printf("\nRow 1\n");
     for (size_t i = 0; i < m; i++)
         printf("%d ", *(arr + i));
     printf("\n");
