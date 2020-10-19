@@ -52,4 +52,4 @@ void get_column(int (* arr)[N], size_t m, size_t column) {
             printf("%d ", arr[cols][column]);
     }
     printf("\n");
-}git status
+}
