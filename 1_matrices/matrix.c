@@ -13,6 +13,7 @@ Matrix operation
 void print_matrix(int (* arr)[N], size_t); 
 void print_row(int (* arr)[N], size_t, size_t);
 void print_column(int (* arr)[N], size_t, size_t);
+void create_identity_matrix(int (* arr)[N], size_t m);
 
 int main(void) {
     int matrix[M][N] = {{1, 2, 3, 4, 5},
@@ -25,6 +26,11 @@ int main(void) {
     print_matrix(matrix, M);
     print_row(matrix, M, 0);
     print_column(matrix, M, 1);
+
+    int iden_mat [M][N];
+    create_identity_matrix(iden_mat, M);
+    printf("\nIdentity matrix 5 x 5:\n");
+    print_matrix(iden_mat, M);
 
     return EXIT_SUCCESS;
 }
@@ -52,4 +58,16 @@ void print_column(int (* arr)[N], size_t m, size_t column) {
             printf("%d ", arr[cols][column]);
     }
     printf("\n");
+}
+
+void create_identity_matrix(int (* arr)[N], size_t m) {
+    for (size_t i = 0; i < M; i++) {
+        for (size_t j = 0; j < N; j++) {
+            if (i == j) {
+                arr[i][j] = 1;
+            } else {
+                arr[i][j] = 0;
+            }
+        }
+    }
 }
