@@ -15,12 +15,12 @@ function calculate_factorial(n: number): number {
 
 function calculate_euler_number(n: number): number {
     let sum = 0.0;
-    let i = 0;
+    let i = 1;
     while (i < n) {
         sum += 1.0 / calculate_factorial(i);
         i += 1;
     }
-    return sum;
+    return sum + 1;
 }
 
 let n = 10.0;
