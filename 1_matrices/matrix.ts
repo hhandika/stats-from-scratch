@@ -19,14 +19,6 @@ function create_identity_matrix(size: number): number[][]{
     return mat;
 }
 
-function print_matrix(arr: number[][]) {
-    for (let rows = 0; rows < arr.length; rows++) {
-        for (let cols = 0; cols < arr.length; cols++) {
-            console.log(arr[rows][cols]);
-        }
-    }
-}
-
-let mat: number[][] = create_identity_matrix(5)
-console.log("Identity matrix: \n")
-print_matrix(mat)
+let mat: number[][] = create_identity_matrix(5);
+console.log("Identity matrix: \n");
+console.log(mat);

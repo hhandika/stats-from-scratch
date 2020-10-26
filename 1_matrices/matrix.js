@@ -18,13 +18,6 @@ function create_identity_matrix(size) {
     }
     return mat;
 }
-function print_matrix(arr) {
-    for (var rows = 0; rows < arr.length; rows++) {
-        for (var cols = 0; cols < arr.length; cols++) {
-            console.log(arr[rows][cols]);
-        }
-    }
-}
 var mat = create_identity_matrix(5);
 console.log("Identity matrix: \n");
-print_matrix(mat);
+console.log(mat);
