@@ -18,6 +18,14 @@ function create_identity_matrix(size) {
     }
     return mat;
 }
+function print_matrix(vec) {
+    var rows = 0;
+    while (rows < vec.length) {
+        console.log(mat[rows] + '\n');
+        rows++;
+    }
+}
 var mat = create_identity_matrix(5);
 console.log("Identity matrix: \n");
-console.log(mat);
+// console.log(mat);
+print_matrix(mat);
