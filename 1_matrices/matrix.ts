@@ -9,7 +9,7 @@ function create_identity_matrix(size: number): number[][]{
     for (let rows = 0; rows < size; rows++) {
         mat[rows] = [];
         for (let cols = 0; cols < size; cols++) {
-            if (rows == cols) {
+            if (rows === cols) {
                 mat[rows][cols] = 1;
             } else {
                 mat[rows][cols] = 0;
