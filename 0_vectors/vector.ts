@@ -26,6 +26,8 @@ function substract_vectors(vec: Vectors): number[] {
 return result;
 }
 
+// Better for small vector size compare to reduce
+// method.
 function sum_vector(vec: number[]): number {
     let sum: number = 0.0;
     for (let i = 0; i < vec.length; i++) {
@@ -34,6 +36,7 @@ function sum_vector(vec: number[]): number {
     return sum;
 }
 
+// Better for large vector size.
 function sum_reduce(vec: number[]): number {
     let sum = vec.reduce((accumulator, current) =>
         accumulator + current);
