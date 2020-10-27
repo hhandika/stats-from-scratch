@@ -29,5 +29,4 @@ function print_matrix(vec: number[][]) {
 
 let mat: number[][] = create_identity_matrix(5);
 console.log("Identity matrix: \n");
-// console.log(mat);
 print_matrix(mat);

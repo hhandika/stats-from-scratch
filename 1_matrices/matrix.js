@@ -27,5 +27,4 @@ function print_matrix(vec) {
 }
 var mat = create_identity_matrix(5);
 console.log("Identity matrix: \n");
-// console.log(mat);
 print_matrix(mat);
