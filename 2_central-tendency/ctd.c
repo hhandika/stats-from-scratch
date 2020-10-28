@@ -20,6 +20,8 @@ int main(void) {
     printf("Vector values: ");
     print_vector(vec, N);
 
+    printf("Mean vector %.2f\n", mean_vector(vec, N));
+
     return EXIT_SUCCESS;
 }
 
