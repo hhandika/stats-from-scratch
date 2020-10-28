@@ -9,20 +9,34 @@ Dispersion
 
 #define N 10
 
+typedef struct {
+    int min;
+    int max;
+} Range;
+
+void print_vector(int * vec, size_t vec_size);
 int max_vector(int * vec, size_t vec_size);
 int min_vector(int * vec, size_t vec_size);
-
+Range print_range(int * vec, size_t vec_size);
 
 int main(void) {
     int vec[N] = {10, 20, 23, 24, 25, 
                 26, 27, 28, 29, 30};
 
-                
-    printf("Mean vector %.2f\n", mean_vector(vec, N));
-    printf("Max values: %d\n", max_vector(vec, N));
-    printf("Min values: %d\n", min_vector(vec, N));
+    printf("Vector values: ");
+    print_vector(vec, N);
+
+    Range values = print_range(vec, N);
+    printf("Value ranges: %d-%d\n", 
+        values.min, values.max);
 
     return EXIT_SUCCESS;
+}
+
+void print_vector(int * vec, size_t vec_size) {
+    for (size_t i = 0; i < vec_size; i++)
+        printf("%d ", vec[i]);
+    printf("\n");
 }
 
 int max_vector(int * vec, size_t vec_size) {
@@ -43,4 +57,11 @@ int min_vector(int * vec, size_t vec_size) {
         i++;
     }
     return min;
+}
+
+Range print_range(int * vec, size_t vec_size) {
+    Range values;
+    values.min = min_vector(vec, vec_size);
+    values.max = max_vector(vec, vec_size);
+    return values;
 }
