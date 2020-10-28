@@ -11,12 +11,14 @@ Dot product
 Sum of square
 Magnitude
 Distance
+
+Compiler flags: -Wall -Werror -lm
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include <math.h> // Use -lm compiler flag
+#include <math.h> 
 
 /* 
 * Pre-defined array size using macro
@@ -155,7 +157,7 @@ float mean_vectors(int sum, size_t arr_size) {
 * It will be use to compute sum of square
 */
 float compute_dot_product(int * x, int * y, size_t arr_size) {
-    float sum = 0;
+    float sum = 0.0;
     for (size_t i = 0; i < arr_size; i++) {
         sum += x[i] * y[i];
     }
