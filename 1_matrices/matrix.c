@@ -63,11 +63,8 @@ void print_column(int (* arr)[N], size_t m, size_t column) {
 void create_identity_matrix(int (* arr)[N], size_t m) {
     for (size_t i = 0; i < M; i++) {
         for (size_t j = 0; j < N; j++) {
-            if (i == j) {
-                arr[i][j] = 1;
-            } else {
-                arr[i][j] = 0;
-            }
+            if (i == j) arr[i][j] = 1;
+            else arr[i][j] = 0; 
         }
     }
 }

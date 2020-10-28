@@ -8,7 +8,7 @@ function create_identity_matrix(size) {
     for (var rows = 0; rows < size; rows++) {
         mat[rows] = [];
         for (var cols = 0; cols < size; cols++) {
-            if (rows == cols) {
+            if (rows === cols) {
                 mat[rows][cols] = 1;
             }
             else {
@@ -18,6 +18,13 @@ function create_identity_matrix(size) {
     }
     return mat;
 }
+function print_matrix(vec) {
+    var rows = 0;
+    while (rows < vec.length) {
+        console.log(mat[rows] + '\n');
+        rows++;
+    }
+}
 var mat = create_identity_matrix(5);
 console.log("Identity matrix: \n");
-console.log(mat);
+print_matrix(mat);
