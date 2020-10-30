@@ -9,6 +9,10 @@ fn main() {
     println!("Sum values: {}", sum_vector(&vec));
     println!("Min values: {}", min_vector(&vec));
     println!("Max values: {}", max_vector(&vec));
+    println!("Non idiomatic Max values: {}", 
+        max_values(&vec));
+    println!("Non idiomatic Min values: {}", 
+        min_values(&vec));
 }
 
 fn sum_vector(vec: &Vec<i32>) -> i32 {
@@ -33,4 +37,26 @@ fn max_vector(vec: &Vec<i32>) -> i32 {
         Some(i) => *i,
         None => 0,
     }
+}
+
+// Not idiomatic rust
+fn max_values(vec: &Vec<i32>) -> i32 {
+    let mut max = 0;
+    for &i in vec.iter() {
+        if i > max {
+            max = i
+        }
+    }
+    max
+}
+
+// Not idiomatic rust
+fn min_values(vec: &Vec<i32>) -> i32 {
+    let mut min = vec[0];
+    for &i in vec.iter() {
+        if i < min{
+            min = i
+        }
+    }
+    min
 }
