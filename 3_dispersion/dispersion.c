@@ -14,7 +14,7 @@ typedef struct {
     int max;
 } Range;
 
-void print_vector(int * vec, size_t vec_size);
+void print_vector(int * vec, size_t vec_size); 
 int max_vector(int * vec, size_t vec_size);
 int min_vector(int * vec, size_t vec_size);
 Range print_range(int * vec, size_t vec_size);
