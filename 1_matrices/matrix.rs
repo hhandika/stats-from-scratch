@@ -6,10 +6,10 @@ fn main() {
     const ROWS: usize = 6;
     const COLS: usize = 6;
     let mat = create_identity_matrix(ROWS, COLS);
-    print_matrix(mat);
+    print_matrix(&mat);
 }
 
-fn print_matrix(mat: Vec<Vec<i32>>) {
+fn print_matrix(mat: &Vec<Vec<i32>>) {
     for i in mat.iter() {
         println!("{:?}", i);
     }
