@@ -8,4 +8,5 @@ The code is still at its infancy. I tend to write C code first and continue with
 
 ## References:
 Grus, J., 2019. Data science from scratch: first principles with python. O'Reilly Media.
+
 Deisenroth, M.P., Faisal, A.A. and Ong, C.S., 2020. Mathematics for machine learning. Cambridge University Press.
