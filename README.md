@@ -1,5 +1,10 @@
 # Statistics from Scratch
-Statistics from scratch written in multiple programming languages. The goal is to use only the language standard library to solve data science problems.
+This is my pandemic mood-driven project aimed for teaching myself the fundamental of statistics. The goal is to implement statistical problems in multiple programming languages that I am comfortable on using. There is no deadline when I will finish it. There is no guarantee I will finish it either. Despite my selfish motivation, I do hope that this library will serve these purposes:
+1. A reference for other people who interested on learning statistics through code.
+2. A reference for those who already knew statistics but don't know how to implement it in code.
+3. As a teaching material, at least for me. Other people are also welcome to use it. 
+
+Of course, I will be grateful if it can be used beyond what I layout above.
 
 ## Implementation
 
