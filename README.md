@@ -1,4 +1,4 @@
-# fun-data-science
+# Statistics from Scratch
 Statistics from scratch written in multiple programming languages. The goal is to use only the language standard library to solve data science problems.
 
 ## State of Code
