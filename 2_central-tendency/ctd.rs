@@ -7,6 +7,7 @@ fn main() {
                             26, 27, 28, 29, 30];
 
     println!("Sum values: {}", sum_vector(&vec));
+    println!("Mean: {}", mean_vector(&vec));
     println!("Min values: {}", min_vector(&vec));
     println!("Max values: {}", max_vector(&vec));
     println!("Non idiomatic Max values: {}", 
@@ -21,6 +22,11 @@ fn sum_vector(vec: &Vec<i32>) -> i32 {
         sum += i;
     }
     sum
+}
+
+fn mean_vector(vec: &Vec<i32>) -> f64 {
+    let len = vec.len();
+    sum_vector(vec) as f64 / len as f64
 }
 
 fn min_vector(vec: &Vec<i32>) -> i32 {
