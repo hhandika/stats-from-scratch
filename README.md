@@ -6,7 +6,7 @@ Statistics from scratch written in multiple programming languages. The goal is t
 | Problems          |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R     |
 |-------------------|----    |------ |-------|-----  |-----------------------|-------    |-------|---    |
 | Vector Operation  |        |       |       |       |                       |           |       |       |
-| - Summation       |✔       |       |       |       |                       |           |       |       |
+| - Summation       |✔       |       |✔     | ✔     | ✔                    | ✔         |       |       |
 
 ## State of Code
 The code is still at its infancy. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. Todo:
