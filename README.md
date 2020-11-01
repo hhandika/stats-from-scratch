@@ -7,6 +7,6 @@ The code is still at its infancy. I tend to write C code first and continue with
 2. Change the default implementation to floating points. Current implementation is in integer 32-bit. 
 
 ## References:
+Deisenroth, M.P., Faisal, A.A. and Ong, C.S., 2020. Mathematics for machine learning. Cambridge University Press.</br>
 Grus, J., 2019. Data science from scratch: first principles with python. O'Reilly Media.
 
-Deisenroth, M.P., Faisal, A.A. and Ong, C.S., 2020. Mathematics for machine learning. Cambridge University Press.
