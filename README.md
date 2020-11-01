@@ -1,5 +1,5 @@
 # fun-data-science
-Data science statistics from scratch written in multiple programming languages. The goal is to use only the language standard library to solve data science problems.
+Statistics from scratch written in multiple programming languages. The goal is to use only the language standard library to solve data science problems.
 
 ## State of Code
 The code is still at its infancy. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, the higher level language will show up later in the process. Todo:
