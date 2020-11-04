@@ -1,8 +1,8 @@
 # Statistics from Scratch
 This is my pandemic mood-driven project aimed for teaching myself the fundamental of statistics. The goal is to implement statistical computation in multiple programming languages that I am comfortable on using. There is no deadline when I will finish it. There is no guarantee I will finish it either. Despite my selfish motivation, I do hope that this library will serve these purposes:
-1. A reference for other people who interested on learning statistics through code.
-2. A reference for those who already knew statistics but don't know how to implement it in code.
-3. As a teaching material, at least for me. Other people are also welcome to use it. 
+1. As a teaching material, at least for me. Other people are also welcome to use it. 
+2. A reference for other people who interested on learning statistics through code.
+3. A code reference for those who already knew statistics.
 
 Of course, I will be grateful if it can be used beyond what I layout above.
 
