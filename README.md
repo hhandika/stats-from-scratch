@@ -11,26 +11,26 @@ Of course, I will be grateful if it can be used beyond those goals.
 
 ## Implementation
 <!-- Need update! -->
-|Computation        |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R     |
-|-------------------|----    |------ |-------|-----  |-----------------------|-------    |-------|---    |
-|<i>Vector Operation</i>  |        |       |       |       |                       |           |       |       |
-| - Addition       | ✔       |       |✔     |       | ✔                     | ✔         |       |       |
-| - Substraction    |✔       |       |✔     |       |✔                      |✔          |       |       |
-| - Multiplication  |✔       |       |✔     |       |                      |✔            |       |       |
-| - Summation       |✔       |       |✔     | ✔     | ✔                    |✔          |       |       |
-| - Mean            |✔       |       |✔     |        |                      |✔           |       |       |
-| - Dot product     |✔       |       |✔      |        |                     |✔           |       |       |
-|<i>Matrix Operation</i>  |        |       |       |       |                       |           |       |       |
-| - Identity matrix |✔       |       |✔      |       |✔                     |           |       |       |
-| <i>Central Tendency</i>  |        |       |       |       |                       |           |       |       |
-| - Sort            |✔       |       |✔      |       |                       |           |       |       |
-| - Mean            |✔       |       |✔      |       |                       |           |       |       |
-| - Median          |✔       |       |✔      |       |                       |           |       |       |
-|<i>Dispersion</i>  |        |       |       |       |                       |           |       |       |
-| - Min             |✔       |       |✔      |       |                       |           |       |       |
-| - Max             |✔       |       |✔      |       |                       |           |       |       |
-| - Range           |✔       |       |✔      |       |                       |           |       |       |
-| Euler number      |✔       |✔      |✔      |✔     |✔                     |✔           |✔      |        |
+|Computation            |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R     |
+|-------------------    |----    |------ |-------|-----  |-----------------------|-------    |-------|---    |
+|<i>Vector Operation</i>|        |       |       |       |                       |           |       |       |
+| - Addition            | ✔      |       |✔     |       | ✔                     | ✔        |       |       |
+| - Substraction        |✔       |       |✔     |       |✔                      |✔         |       |       |
+| - Multiplication      |✔       |       |✔     |       |                      |✔           |       |       |
+| - Summation           |✔       |       |✔     | ✔     | ✔                    |✔          |       |       |
+| - Mean                |✔       |       |✔     |        |                      |✔          |       |       |
+| - Dot product         |✔       |       |✔      |        |                     |✔          |       |       |
+|<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
+| - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
+| <i>Central Tendency</i>|       |       |       |       |                       |           |       |       |
+| - Sort                |✔       |       |✔      |       |                       |           |       |       |
+| - Mean                |✔       |       |✔      |       |                       |           |       |       |
+| - Median              |✔       |       |✔      |       |                       |           |       |       |
+|<i>Dispersion</i>      |        |       |        |       |                       |           |       |       |
+| - Min                 |✔       |       |✔      |       |                       |           |       |       |
+| - Max                 |✔       |       |✔      |       |                       |           |       |       |
+| - Range               |✔       |       |✔      |       |                       |           |       |       |
+| Euler number          |✔       |✔      |✔      |✔     |✔                     |✔           |✔      |        |
 
 ## State of Code
 The code is still at its infancy. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. Todo:
