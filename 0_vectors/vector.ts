@@ -47,6 +47,14 @@ function mean_vectors(vec: number[]): number {
     let mean = sum_vector(vec) / vec.length;
     return mean;
 }
+
+function sum_using_of(vec: number[]): number {
+    let sum: number = 0.0;
+    for (let num of vec) {
+        sum += num;
+    }
+    return sum;
+}
  
 let first_vector = {x: [10, 20, 30, 40, 50], y: [1, 2, 3, 4, 5]}
 
@@ -60,3 +68,5 @@ console.log("Sum using reduce: " +
     sum_reduce(first_vector.x));
 console.log("Mean vector x: " + 
     mean_vectors(first_vector.x));
+console.log("Sum vector using 'of' method: " + 
+    sum_using_of(first_vector.x));
