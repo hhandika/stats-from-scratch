@@ -13,20 +13,20 @@ Of course, I will be grateful if it can be used beyond those goals.
 <!-- Need update! -->
 |Computation        |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R     |
 |-------------------|----    |------ |-------|-----  |-----------------------|-------    |-------|---    |
-|<b>Vector Operation</b>  |        |       |       |       |                       |           |       |       |
+|<i>Vector Operation</i>  |        |       |       |       |                       |           |       |       |
 | - Addition       | ✔       |       |✔     |       | ✔                     | ✔         |       |       |
 | - Substraction    |✔       |       |✔     |       |✔                      |✔          |       |       |
 | - Multiplication  |✔       |       |✔     |       |                      |✔            |       |       |
 | - Summation       |✔       |       |✔     | ✔     | ✔                    |✔          |       |       |
 | - Mean            |✔       |       |✔     |        |                      |✔           |       |       |
 | - Dot product     |✔       |       |✔      |        |                     |✔           |       |       |
-|Matrix Operation  |        |       |       |       |                       |           |       |       |
+|<i>Matrix Operation</i>  |        |       |       |       |                       |           |       |       |
 | - Identity matrix |✔       |       |✔      |       |✔                     |           |       |       |
 | Central Tendency  |        |       |       |       |                       |           |       |       |
 | - Sort            |✔       |       |✔      |       |                       |           |       |       |
 | - Mean            |✔       |       |✔      |       |                       |           |       |       |
 | - Median          |✔       |       |✔      |       |                       |           |       |       |
-| Dispersion        |        |       |       |       |                       |           |       |       |
+|<i>Dispersion</i>  |        |       |       |       |                       |           |       |       |
 | - Min             |✔       |       |✔      |       |                       |           |       |       |
 | - Max             |✔       |       |✔      |       |                       |           |       |       |
 | - Range           |✔       |       |✔      |       |                       |           |       |       |
