@@ -19,9 +19,10 @@ fn main() {
     println!("Sort int vec: {:?}", sort_vector_int(&vec));
     
     let vec_dob: Vec<f64> = vec![13.2, 13.5, 10.3, 12.0,
-                                20.1, 50.3, 15.4];
+                                20.1, 50.3, 15.4, 10.3, 11.0];
     
     println!("Sort vector: {:?}", sort_vector(&vec_dob));
+    println!("Median vector: {}", find_median(&vec_dob));
 }
 
 fn vector_size(vec: &Vec<i32>) -> usize {
@@ -89,4 +90,18 @@ fn min_values(vec: &Vec<i32>) -> i32 {
         }
     }
     min
+}
+
+fn find_median(vec: &Vec<f64>) -> f64 {
+    let vec_sorted = sort_vector(&vec);
+    let vec_size = vec_sorted.len();
+    let hi_midpoint = vec_size / 2;
+
+    let median;
+    if vec_size % 2 == 0  {
+       median = (vec_sorted[hi_midpoint - 1] + vec_sorted[hi_midpoint]) / 2.0;
+    } else {
+        median = vec_sorted[hi_midpoint];
+    }
+    median
 }
