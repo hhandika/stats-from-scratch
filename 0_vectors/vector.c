@@ -30,9 +30,11 @@ Compiler flags: -Wall -Werror -lm
 // Shorten function call to free memory.
 #define FREE_MEM(p) free_mem((void**)&p)
 
+
 void print_vectors(int * vec, size_t vec_size);
 int allocate_mem(int **arr, size_t size);
 void free_mem(void **pointer);
+int * vec_ones(size_t arr_size);
 int * add_vectors(int * x, int * y, size_t arr_size);
 int * substract_vectors(int x[], int y[], size_t arr_size);
 int * multiply_vectors(int * x, int * y, size_t arr_size);
@@ -46,6 +48,10 @@ float compute_vector_distance(int * x, int * y, size_t arr_size);
 int main(void) {
     int x[MAX] = {1, 2, 3, 4, 5};
     int y[MAX] = {10, 20, 30, 40, 50};
+
+    int * ones_vec = vec_ones(MAX);
+    printf("Vector ones: "); 
+    print_vectors(ones_vec, MAX);
 
     int * add_res = add_vectors(x, y, MAX);
     printf("Vector addition: ");
@@ -108,6 +114,15 @@ void free_mem(void **pointer) {
         free(*pointer);
         *pointer = NULL;
     }
+}
+
+int * vec_ones(size_t arr_size) {
+    int * presult = NULL;
+    allocate_mem(&presult, arr_size);
+    for (size_t i = 0; i < arr_size; i++) {
+        presult[i] = 1;
+   }
+   return presult;
 }
 
 int * add_vectors(int x[], int y[], size_t arr_size) {
