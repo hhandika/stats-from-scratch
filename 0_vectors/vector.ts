@@ -46,8 +46,8 @@ function sum_vector(vec: number[]): number {
 
 // Better for large vector size.
 function sum_reduce(vec: number[]): number {
-    let sum = vec.reduce((accumulator, current) =>
-        accumulator + current);
+    let sum = vec.reduce((val_accu, current_val) =>
+        val_accu + current_val);
     return sum;
 }
 
@@ -56,6 +56,7 @@ function mean_vectors(vec: number[]): number {
     return mean;
 }
 
+// Shorter version of for loop. 
 function sum_using_of(vec: number[]): number {
     let sum: number = 0.0;
     for (let num of vec) {

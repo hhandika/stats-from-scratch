@@ -36,8 +36,8 @@ function sum_vector(vec) {
 }
 // Better for large vector size.
 function sum_reduce(vec) {
-    var sum = vec.reduce(function (accumulator, current) {
-        return accumulator + current;
+    var sum = vec.reduce(function (val_accu, current_val) {
+        return val_accu + current_val;
     });
     return sum;
 }
