@@ -8,6 +8,9 @@ fn main() {
     let x: Vec<i32> = vec![1, 2, 3, 4, 5];
     let y: Vec<i32> = vec![10, 20, 30, 40, 50];
 
+    println!("Vector ones: {:?}",
+        vector_ones(5));
+
     println!("Vector addition: {:?}", 
         add_two_vectors(&x, &y));
 
@@ -28,6 +31,14 @@ fn main() {
         calculate_sum_of_square(&x));
     println!("Sum of square y: {:.2}", 
         calculate_sum_of_square(&y));
+}
+
+fn vector_ones(vec_size: usize) -> Vec<i32> {
+    let mut vec_ones: Vec<i32> = Vec::with_capacity(vec_size);
+    for _ in 0..vec_size {
+        vec_ones.push(1);
+    }
+    vec_ones
 }
 
 fn add_two_vectors(x: &Vec<i32>, y: &Vec<i32>) -> Vec<i32>{
