@@ -22,7 +22,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Dot product         |✔       |       |✔      |        |                     |✔          |       |       |
 |<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
 | - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
-|<i>Central Tendency</i>|       |       |       |       |                       |           |       |       |
+|<i>Central Tendency</i>|        |       |       |       |                       |           |       |       |
 | - Sort                |✔       |       |✔      |       |                       |           |       |       |
 | - Mean                |✔       |       |✔      |       |                       |           |       |       |
 | - Median              |✔       |       |✔      |       |                       |           |       |       |
@@ -30,7 +30,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Min                 |✔       |       |✔      |       |                       |           |       |       |
 | - Max                 |✔       |       |✔      |       |                       |           |       |       |
 | - Range               |✔       |       |✔      |       |                       |           |       |       |
-| Euler number          |✔       |✔      |✔      |✔     |✔                     |✔           |✔      |        |
+| Euler number          |✔       |✔      |✔      |✔     |✔                      |✔         |✔      |       |
 
 ## State of Code
 The code is still at its infancy. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. Todo:
