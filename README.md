@@ -19,7 +19,8 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Multiplication      |✔       |       |✔     |       |                      |✔           |       |       |
 | - Summation           |✔       |       |✔     | ✔     | ✔                    |✔          |       |       |
 | - Mean                |✔       |       |✔     |        |                      |✔          |       |       |
-| - Dot product         |✔       |       |✔      |        |                     |✔          |       |       |
+| - Dot product         |✔       |       |✔     |        |                      |✔          |       |       |
+| - Sum of square       |✔       |       |✔     |       |                       |✔          |       |       |
 |<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
 | - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
 |<i>Central Tendency</i>|        |       |       |       |                       |           |       |       |
