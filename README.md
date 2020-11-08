@@ -22,7 +22,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Dot product         |✔       |       |✔      |        |                     |✔          |       |       |
 |<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
 | - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
-| <i>Central Tendency</i>|       |       |       |       |                       |           |       |       |
+|<i>Central Tendency</i>|       |       |       |       |                       |           |       |       |
 | - Sort                |✔       |       |✔      |       |                       |           |       |       |
 | - Mean                |✔       |       |✔      |       |                       |           |       |       |
 | - Median              |✔       |       |✔      |       |                       |           |       |       |
