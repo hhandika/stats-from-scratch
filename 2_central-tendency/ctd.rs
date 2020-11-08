@@ -3,7 +3,7 @@
 //! Central tendency
 
 fn main() {
-    let vec: Vec<i32> = vec![10, 20, 23, 24, 25, 
+    let vec: Vec<i32> = vec![10, 27, 23, 24, 25, 
                             26, 27, 28, 29, 30];
     println!("No of values in vector: {}", 
         vector_size(&vec));
@@ -15,10 +15,29 @@ fn main() {
         max_values(&vec));
     println!("Non idiomatic Min values: {}", 
         min_values(&vec));
+
+    println!("Sort int vec: {:?}", sort_vector_int(&vec));
+    
+    let vec_dob: Vec<f64> = vec![13.2, 13.5, 10.3, 12.0,
+                                20.1, 50.3, 15.4];
+    
+    println!("Sort vector: {:?}", sort_vector(&vec_dob));
 }
 
 fn vector_size(vec: &Vec<i32>) -> usize {
     vec.len()
+}
+
+fn sort_vector(vec: &Vec<f64>) -> Vec<f64> {
+    let mut vec_sorted = vec.to_vec();
+    vec_sorted.sort_by(|a, b| a.partial_cmp(b).unwrap());
+    vec_sorted
+}
+
+fn sort_vector_int(vec: &Vec<i32>) -> Vec<i32> {
+    let mut vec_sorted = vec.to_vec();
+    vec_sorted.sort();
+    vec_sorted
 }
 
 fn sum_vector(vec: &Vec<i32>) -> i32 {
