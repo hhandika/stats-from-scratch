@@ -30,8 +30,8 @@ function substract_vectors(vec: Vectors): number[] {
     let result: number[] = [0]
     for (let i = 0; i < vec.x.length; i++) {
         result[i] = vec.x[i] - vec.y[i];
-}
-return result;
+    }
+    return result;
 }
 
 // Better for small vector size compare to reduce
