@@ -10,6 +10,14 @@ interface Vectors {
     y: number[];
 }
 
+function vector_ones(vec_size: number): number[] {
+    let vec_ones: number[] = [0];
+    for (let val = 0; val < vec_size; val++) {
+        vec_ones[val] = 1;
+    }
+    return vec_ones;
+}
+
 function add_two_vectors(vec: Vectors): number[] {
     let result: number[] = [0];
     for (let i = 0; i < vec.x.length; i++) {
@@ -58,6 +66,8 @@ function sum_using_of(vec: number[]): number {
  
 let first_vector = {x: [10, 20, 30, 40, 50], y: [1, 2, 3, 4, 5]}
 
+console.log("Vector ones: " +
+    vector_ones(5));
 console.log("Vector addition: " + 
     add_two_vectors(first_vector));
 console.log("Vector substraction: " +

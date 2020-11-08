@@ -4,6 +4,13 @@ Heru Handika
 Typescript implementation for
 vector operation
 */
+function vector_ones(vec_size) {
+    var vec_ones = [0];
+    for (var val = 0; val < vec_size; val++) {
+        vec_ones[val] = 1;
+    }
+    return vec_ones;
+}
 function add_two_vectors(vec) {
     var result = [0];
     for (var i = 0; i < vec.x.length; i++) {
@@ -47,6 +54,8 @@ function sum_using_of(vec) {
     return sum;
 }
 var first_vector = { x: [10, 20, 30, 40, 50], y: [1, 2, 3, 4, 5] };
+console.log("Vector ones: " +
+    vector_ones(5));
 console.log("Vector addition: " +
     add_two_vectors(first_vector));
 console.log("Vector substraction: " +
