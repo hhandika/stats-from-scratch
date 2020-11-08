@@ -5,7 +5,8 @@
 fn main() {
     let vec: Vec<i32> = vec![10, 20, 23, 24, 25, 
                             26, 27, 28, 29, 30];
-
+    println!("No of values in vector: {}", 
+        vector_size(&vec));
     println!("Sum values: {}", sum_vector(&vec));
     println!("Mean: {}", mean_vector(&vec));
     println!("Min values: {}", min_vector(&vec));
@@ -14,6 +15,10 @@ fn main() {
         max_values(&vec));
     println!("Non idiomatic Min values: {}", 
         min_values(&vec));
+}
+
+fn vector_size(vec: &Vec<i32>) -> usize {
+    vec.len()
 }
 
 fn sum_vector(vec: &Vec<i32>) -> i32 {
