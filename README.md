@@ -10,7 +10,7 @@ There is no deadline when I will finish it. There is no guarantee I will finish 
 Of course, I will be grateful if it can be used beyond those goals.
 
 ## Implementation
-Need update!
+<!-- Need update! -->
 |Computation        |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R     |
 |-------------------|----    |------ |-------|-----  |-----------------------|-------    |-------|---    |
 | Vector Operation  |        |       |       |       |                       |           |       |       |
@@ -20,10 +20,17 @@ Need update!
 | - Summation       |✔       |       |✔     | ✔     | ✔                    |✔          |       |       |
 | - Mean            |✔       |       |✔     |        |                      |✔           |       |       |
 | - Dot product     |✔       |       |✔      |        |                     |✔           |       |       |
+| Matrix Operation  |        |       |       |       |                       |           |       |       |
+| - Identity matrix |✔       |       |✔      |       |✔                     |           |       |       |
+| Central Tendency  |        |       |       |       |                       |           |       |       |
+| - Sort            |✔       |       |✔      |       |                       |           |       |       |
+| - Mean            |✔       |       |✔      |       |                       |           |       |       |
+| - Median          |✔       |       |✔      |       |                       |           |       |       |
+| Dispersion        |        |       |       |       |                       |           |       |       |
+| - Min             |✔       |       |✔      |       |                       |           |       |       |
+| - Max             |✔       |       |✔      |       |                       |           |       |       |
+| - Range           |✔       |       |✔      |       |                       |           |       |       |
 | Euler number      |✔       |✔      |✔      |✔     |✔                     |✔           |✔      |        |
-
-
-
 
 ## State of Code
 The code is still at its infancy. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. Todo:
