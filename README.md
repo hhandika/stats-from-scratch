@@ -21,6 +21,8 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Mean                |✔       |       |✔     |        |                      |✔          |       |       |
 | - Dot product         |✔       |       |✔     |        |                      |✔          |       |       |
 | - Sum of square       |✔       |       |✔     |       |                       |✔          |       |       |
+| - Magnitude           |✔       |       |       |       |                       |           |       |       |
+| - Distance            |✔       |       |       |       |                       |           |       |       |
 |<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
 | - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
 |<i>Central Tendency</i>|        |       |       |       |                       |           |       |       |
