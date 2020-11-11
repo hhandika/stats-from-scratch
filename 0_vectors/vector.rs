@@ -4,6 +4,8 @@ Heru Handika
 Vector addition and multiplication in rust
 */
 
+use std::f64;
+
 fn main() {
     let x: Vec<i32> = vec![1, 2, 3, 4, 5];
     let y: Vec<i32> = vec![10, 20, 30, 40, 50];
@@ -31,6 +33,10 @@ fn main() {
         calculate_sum_of_square(&x));
     println!("Sum of square y: {:.2}", 
         calculate_sum_of_square(&y));
+    println!("Magnitude x: {:.4}", 
+        compute_magnitude(&x));
+    println!("X & Y distance: {:.4}", 
+        compute_vector_distance(&x, &y));
 }
 
 fn vector_ones(vec_size: usize) -> Vec<i32> {
@@ -95,4 +101,14 @@ fn calculate_dot_product(x: &Vec<i32>, y: &Vec<i32>) -> f64 {
 
 fn calculate_sum_of_square(vec: &Vec<i32>) -> f64 {
     calculate_dot_product(vec, vec)
+}
+
+fn compute_magnitude(vec: &Vec<i32>) -> f64 {
+    calculate_sum_of_square(&vec).sqrt()
+}
+
+fn compute_vector_distance(x: &Vec<i32>, y: &Vec<i32>) -> f64 {
+    let vec: Vec<i32> = substract_two_vectors(&x, &y);
+    let dist = compute_magnitude(&vec);
+    dist
 }
