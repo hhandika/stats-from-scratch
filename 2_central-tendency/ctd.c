@@ -44,14 +44,6 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
-void print_quantile(double * vec, size_t vec_size) {
-    float arr_quantile[Q] = {0.10, 0.25, 0.75, 0.90};
-    for (size_t i = 0; i < Q; i++) {
-        printf("Quantile %.f%%: %.2f\n", arr_quantile[i] * 100, 
-            find_quantile(vec, vec_size, arr_quantile[i]));
-    }
-}
-
 void print_vector(double * vec, size_t vec_size) {
     for (size_t i = 0; i < vec_size; i++)
         printf("%.2f ", vec[i]);
@@ -106,4 +98,12 @@ double find_quantile(double * vec, size_t vec_size, float percentile) {
     sort_vector(vec, vec_size);
     int index = (int) (percentile * vec_size);
     return vec[index];
+}
+
+void print_quantile(double * vec, size_t vec_size) {
+    float arr_quantile[Q] = {0.10, 0.25, 0.75, 0.90};
+    for (size_t i = 0; i < Q; i++) {
+        printf("Quantile %.f%%: %.2f\n", arr_quantile[i] * 100, 
+            find_quantile(vec, vec_size, arr_quantile[i]));
+    }
 }
