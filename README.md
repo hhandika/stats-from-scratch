@@ -29,7 +29,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Sort                |✔       |       |✔      |       |                       |           |       |       |
 | - Mean                |✔       |       |✔      |       |                       |           |       |       |
 | - Median              |✔       |       |✔      |       |                       |           |       |       |
-| - Quantile            |✔       |       |       |       |                       |           |       |       |    
+| - Quantile            |✔       |       |✔      |       |                       |           |       |       |    
 |<i>Dispersion</i>      |        |       |        |       |                       |           |       |       |
 | - Min                 |✔       |       |✔      |       |                       |           |       |       |
 | - Max                 |✔       |       |✔      |       |                       |           |       |       |
