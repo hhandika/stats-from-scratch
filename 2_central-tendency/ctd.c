@@ -104,6 +104,6 @@ double find_median(double * vec, size_t vec_size) {
 
 double find_quantile(double * vec, size_t vec_size, float percentile) {
     sort_vector(vec, vec_size);
-    int index = percentile * vec_size;
+    int index = (int) (percentile * vec_size);
     return vec[index];
 }
