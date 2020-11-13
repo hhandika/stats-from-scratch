@@ -23,6 +23,9 @@ fn main() {
     
     println!("Sort vector: {:?}", sort_vector(&vec_dob));
     println!("Median vector: {}", find_median(&vec_dob));
+
+    print_quantile(&vec_dob)
+   
 }
 
 fn vector_size(vec: &Vec<i32>) -> usize {
@@ -104,4 +107,19 @@ fn find_median(vec: &Vec<f64>) -> f64 {
         median = vec_sorted[hi_midpoint];
     }
     median
+}
+
+fn find_quantile(vec: &Vec<f64>, percentile: f64) -> f64 {
+    let vec_sorted = sort_vector(&vec);
+    let vec_size = vec_sorted.len();
+    let index = percentile * vec_size as f64;
+    vec_sorted[index.round() as usize]
+}
+
+fn print_quantile(vec: &Vec<f64>) {
+    let quantile = [0.10, 0.25, 0.75, 0.90];
+    for &i in &quantile {
+        println!("Quantile {:0}%: {:2}", 
+            i * 100.0, find_quantile(&vec, i));
+    }
 }
