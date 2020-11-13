@@ -4,8 +4,8 @@ This is my pandemic mood-driven project aimed for teaching myself the fundamenta
 There is no deadline when I will finish it. There is no guarantee I will finish it either. Nonetheless, I do hope that this library will serve these purposes someday:
 1. As a teaching material, at least for me. Other people are also welcome to use it. 
 2. A reference for other people who interested on learning statistics through code.
-3. A code reference for those who already knew statistics.
-4. Experimental code to compare performance among the programming languages and different methods used in the same languages.
+3. A code reference for the future me, and maybe for those who already knew statistics.
+4. As an experimental code to compare performance among the programming languages and different methods used in the same languages.
 
 Of course, I will be grateful if it can be used beyond those goals.
 
