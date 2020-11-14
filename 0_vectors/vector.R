@@ -19,10 +19,10 @@ mul_vec <- x * y
 mul_vec
 
 # Vector summation
-sum(vec)
+sum(x)
 
 # Vector mean
-mean(vec)
+mean(x)
 
 # Dot product
 dot_product <- function(x, y) {
@@ -33,15 +33,14 @@ dot_product(x,y)
 
 # Compute sum of square
 sum_of_square <- function(x){
-  return (sum(dot_product(x,x)))
+  return(sum(dot_product(x,x)))
 }
 
 sum_of_square(x)
 
 # Compute magnitude
 magnitude <- function(x) {
-  mag <- sqrt(sum_of_square(x))
-  return(mag)
+  return(sqrt(sum_of_square(x)))
 }
 
 magnitude(x)
