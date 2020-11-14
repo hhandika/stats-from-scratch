@@ -2,6 +2,9 @@
 Heru Handika
 28 October 2020
 Dispersion
+
+Compiler flags:
+-Wall -Werror -lm
 */
 
 #include <stdio.h>
@@ -120,8 +123,8 @@ double compute_variance(int * vec, size_t vec_size) {
     assert(vec_size > 2);
     double * dev = compute_deviation_mean(vec, vec_size);
     double var = compute_sum_of_square(dev, vec_size) / (vec_size - 1);
-    return var;
     free(dev);
+    return var;
 }
 
 double compute_std_dev(int * vec, size_t vec_size) {
