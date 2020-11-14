@@ -23,8 +23,8 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Sum of square       |✔       |       |✔     |       |                       |✔          |       |✔       |
 | - Magnitude           |✔       |       |✔      |       |                       |           |       |✔       |
 | - Distance            |✔       |       |✔      |       |                       |           |       |✔       |
-|<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
-| - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
+|<i>Matrix Operation</i>|        |       |       |       |                       |           |       |         |
+| - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |✔       |
 |<i>Central Tendency</i>|        |       |       |       |                       |           |       |       |
 | - Sort                |✔       |       |✔      |       |                       |           |       |       |
 | - Mean                |✔       |       |✔      |       |                       |           |       |       |
