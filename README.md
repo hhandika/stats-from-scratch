@@ -13,7 +13,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 <!-- Need update! -->
 |Computation            |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R      |
 |-------------------    |----    |------ |-------|-----  |-----------------------|-------    |-------|--------|
-|<i>Vector Operation</i>|        |       |       |       |                       |           |       |✔       |
+|<i>Vector Operation</i>|        |       |       |       |                       |           |       |        |
 | - Addition            | ✔      |       |✔     |       | ✔                     |✔         |       |✔       |
 | - Substraction        |✔       |       |✔     |       |✔                      |✔         |       |✔       |
 | - Multiplication      |✔       |       |✔     |       |                      |✔           |       |✔       |
