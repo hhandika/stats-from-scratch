@@ -7,6 +7,7 @@ Dispersion
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <math.h>
 
 #define N 10
 
@@ -25,6 +26,7 @@ double compute_dot_product(double * x, double * y, size_t arr_size);
 double compute_sum_of_square(double * x, size_t arr_size);
 double * compute_deviation_mean(int * vec, size_t vec_size);
 double compute_variance(int * vec, size_t vec_size);
+double compute_std_dev(int * vec, size_t vec_size);
 
 int main(void) {
     int vec[N] = {10, 20, 23, 24, 25, 
@@ -37,7 +39,10 @@ int main(void) {
     printf("Value ranges: %d-%d\n", 
         values.min, values.max);
 
-    printf("Variance: %.4f\n", compute_variance(vec, N));
+    printf("Variance: %.4f\n", 
+        compute_variance(vec, N));
+    printf("Standard deviation: %.4f\n", 
+        compute_std_dev(vec, N));
 
     return EXIT_SUCCESS;
 }
@@ -103,12 +108,12 @@ double compute_sum_of_square(double * x, size_t arr_size) {
 }
 
 double * compute_deviation_mean(int * vec, size_t vec_size) {
-    double * de_mean = (double *) malloc(vec_size * sizeof(double));
+    double * x_bar = (double *) malloc(vec_size * sizeof(double));
     double mean = mean_vector(vec, vec_size);
     for (size_t i = 0; i < vec_size; i++) {
-        de_mean[i] = vec[i] - mean;
+        x_bar[i] = vec[i] - mean;
     }
-    return de_mean;
+    return x_bar;
 }
 
 double compute_variance(int * vec, size_t vec_size) {
@@ -117,4 +122,9 @@ double compute_variance(int * vec, size_t vec_size) {
     double var = compute_sum_of_square(dev, vec_size) / (vec_size - 1);
     return var;
     free(dev);
+}
+
+double compute_std_dev(int * vec, size_t vec_size) {
+    double var = compute_variance(vec, vec_size);
+    return sqrt(var);
 }
