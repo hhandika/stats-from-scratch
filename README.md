@@ -11,18 +11,18 @@ Of course, I will be grateful if it can be used beyond those goals.
 
 ## Implementation
 <!-- Need update! -->
-|Computation            |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R     |
-|-------------------    |----    |------ |-------|-----  |-----------------------|-------    |-------|---    |
-|<i>Vector Operation</i>|        |       |       |       |                       |           |       |       |
-| - Addition            | ✔      |       |✔     |       | ✔                     | ✔        |       |       |
-| - Substraction        |✔       |       |✔     |       |✔                      |✔         |       |       |
-| - Multiplication      |✔       |       |✔     |       |                      |✔           |       |       |
-| - Summation           |✔       |       |✔     | ✔     | ✔                    |✔          |       |       |
-| - Mean                |✔       |       |✔     |        |                      |✔          |       |       |
-| - Dot product         |✔       |       |✔     |        |                      |✔          |       |       |
-| - Sum of square       |✔       |       |✔     |       |                       |✔          |       |       |
-| - Magnitude           |✔       |       |✔      |       |                       |           |       |       |
-| - Distance            |✔       |       |✔      |       |                       |           |       |       |
+|Computation            |   C    | C++   | Rust  | Go    | TypeScript/JavaScript | Python    | Julia | R      |
+|-------------------    |----    |------ |-------|-----  |-----------------------|-------    |-------|--------|
+|<i>Vector Operation</i>|        |       |       |       |                       |           |       |✔       |
+| - Addition            | ✔      |       |✔     |       | ✔                     |✔         |       |✔       |
+| - Substraction        |✔       |       |✔     |       |✔                      |✔         |       |✔       |
+| - Multiplication      |✔       |       |✔     |       |                      |✔           |       |✔       |
+| - Summation           |✔       |       |✔     | ✔     | ✔                    |✔          |       |✔       |
+| - Mean                |✔       |       |✔     |        |                      |✔          |       |✔       |
+| - Dot product         |✔       |       |✔     |        |                      |✔          |       |✔       |
+| - Sum of square       |✔       |       |✔     |       |                       |✔          |       |✔       |
+| - Magnitude           |✔       |       |✔      |       |                       |           |       |✔       |
+| - Distance            |✔       |       |✔      |       |                       |           |       |✔       |
 |<i>Matrix Operation</i>|        |       |       |       |                       |           |       |       |
 | - Identity matrix     |✔       |       |✔      |       |✔                     |           |       |       |
 |<i>Central Tendency</i>|        |       |       |       |                       |           |       |       |
