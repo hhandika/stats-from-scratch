@@ -46,11 +46,16 @@ def multiply_vector(x: List[int], y: List[int]) -> List[int]:
 def multiply_by_scalar(vec: List[int], scalar: int) -> List[int]:
     return [scalar * i for i in vec]
 
+# Not a pythonic way.
 def sum_vector(vec: List[int]) -> int:
-    return sum(i for i in vec)
+    sum = 0.0;
+    for i in vec:
+        sum += i
+    return sum
 
+# Using python sum function. 
 def mean_vectors(vec: List[int]) -> float:
-    return float(sum_vector(vec))/len(vec)
+    return float(sum(vec))/len(vec)
 
 def calculate_dot_product(x: List[int], y: List[int]) -> int:
     return sum(multiply_vector(x, y))
