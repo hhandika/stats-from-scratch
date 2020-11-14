@@ -34,6 +34,8 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Min                 |✔       |       |✔      |       |                       |           |       |       |
 | - Max                 |✔       |       |✔      |       |                       |           |       |       |
 | - Range               |✔       |       |✔      |       |                       |           |       |       |
+| - Variance            |✔       |       |       |       |                       |           |       |       |
+| - Std deviation       |✔       |       |       |       |                       |           |       |       |
 | Euler number          |✔       |✔      |✔      |✔     |✔                      |✔         |✔      |       |
 
 ## State of Code
