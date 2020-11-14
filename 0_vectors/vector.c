@@ -167,10 +167,7 @@ float mean_vectors(int sum, size_t arr_size) {
     return (float) sum / arr_size;
 }
 
-/*
-* Dot product measures how far two vectors are
-* It will be use to compute sum of square
-*/
+// Dot product will be use to compute sum of square
 float compute_dot_product(int * x, int * y, size_t arr_size) {
     float sum = 0.0;
     for (size_t i = 0; i < arr_size; i++) {
