@@ -46,9 +46,9 @@ def multiply_vector(x: List[int], y: List[int]) -> List[int]:
 def multiply_by_scalar(vec: List[int], scalar: int) -> List[int]:
     return [scalar * i for i in vec]
 
-# Not a pythonic way.
+# Not a pythonic way. Maybe slow for a large dataset.
 def sum_vector(vec: List[int]) -> int:
-    sum = 0.0;
+    sum: float = 0.0;
     for i in vec:
         sum += i
     return sum
