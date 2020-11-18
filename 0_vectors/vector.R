@@ -33,21 +33,21 @@ dot_product(x,y)
 
 # Compute sum of square
 sum_of_square <- function(x){
-  return(sum(dot_product(x,x)))
+  return (sum(dot_product(x,x)))
 }
 
 sum_of_square(x)
 
 # Compute magnitude
 magnitude <- function(x) {
-  return(sqrt(sum_of_square(x)))
+  return (sqrt(sum_of_square(x)))
 }
 
 magnitude(x)
 
 # Vector distance
 dist <- function(x, y) {
-  return(magnitude(x-y))
+  return (magnitude(x-y))
 }
 
 dist(x,y)
