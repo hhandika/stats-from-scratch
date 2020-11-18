@@ -23,7 +23,7 @@ Compiler flags: -Wall -Werror -lm
 /* 
 * Pre-defined array size using macro
 * this way I will only pass one single array size
-* when passing two arrays. 
+* when passing two arrays. Not safe!
 */
 #define MAX 5
 
