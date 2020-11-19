@@ -108,8 +108,8 @@ int allocate_mem(int **arr, size_t size) {
     return 0;
 }
 
+// Avoid double free memory.
 void free_mem(void **pointer) {
-    // Avoid double free memory.
     if (pointer != NULL && *pointer != NULL) {
         free(*pointer);
         *pointer = NULL;
@@ -180,12 +180,12 @@ float compute_sum_of_square(int * x, size_t arr_size) {
     return compute_dot_product(x, x, arr_size);
 }
 
-// Using sum of square to compute magnitude
+
 float compute_magnitude(int * x, size_t arr_size) {
     return sqrt(compute_sum_of_square(x, arr_size));
 }
 
-// compute vector distance
+
 float compute_vector_distance(int * x, int * y, size_t arr_size) {
     return compute_magnitude(substract_vectors(x, y, MAX), MAX);
 }
