@@ -89,6 +89,7 @@ int main(void) {
 
     FREE_MEM(add_res);
     FREE_MEM(mul_res);
+    FREE_MEM(ones_vec);
     return 0;
 }
 
@@ -180,12 +181,13 @@ float compute_sum_of_square(int * x, size_t arr_size) {
     return compute_dot_product(x, x, arr_size);
 }
 
-
 float compute_magnitude(int * x, size_t arr_size) {
     return sqrt(compute_sum_of_square(x, arr_size));
 }
 
-
 float compute_vector_distance(int * x, int * y, size_t arr_size) {
-    return compute_magnitude(substract_vectors(x, y, MAX), MAX);
+    int * vec_subs = substract_vectors(x, y, MAX);
+    float mag = compute_magnitude(vec_subs, MAX);
+    FREE_MEM(vec_subs);
+    return mag;
 }
