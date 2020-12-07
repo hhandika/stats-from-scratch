@@ -11,8 +11,6 @@ Dot product
 Sum of square
 Magnitude
 Distance
-
-Compiler flags: -Wall -Werror -lm
 */
 
 #include <stdio.h>
@@ -119,8 +117,8 @@ float compute_magnitude(int * x, size_t arr_size) {
 }
 
 float compute_vector_distance(int * x, int * y, size_t arr_size) {
-    int * vec_subs = substract_vectors(x, y, MAX);
-    float mag = compute_magnitude(vec_subs, MAX);
+    int * vec_subs = substract_vectors(x, y, arr_size);
+    float mag = compute_magnitude(vec_subs, arr_size);
     FREE_MEM(vec_subs);
     return mag;
 }
