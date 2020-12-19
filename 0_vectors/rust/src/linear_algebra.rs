@@ -43,7 +43,7 @@ pub mod vector {
 
     pub fn sum_vectors(x: &Vec<i32>) -> i32 {
         let mut sum = 0;
-        for i in x.iter() {
+        for &i in x.iter() {
             sum += i;
         }
         sum
