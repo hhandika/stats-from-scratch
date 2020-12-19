@@ -3,46 +3,8 @@ Heru Handika
 27 October 2020
 Central tendency
 */
+#include "ctd.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-
-#define N 10
-#define Q 4
-
-void print_vector(double * vec, size_t vec_size);
-double sum_vector(double * vec, size_t vec_size);
-double mean_vector(double * vec, size_t vec_size);
-void swap(double * arr_i, double * arr_j);
-void sort_vector(double * vec, size_t vec_size);
-double find_median(double * vec, size_t vec_size);
-double find_quantile(double * vec, size_t vec_size, float percentile);
-void print_quantile(double * vec, size_t vec_size);
-
-int main(void) {
-    double vec[N] = {10.4, 28.2, 23.3, 23.2, 20.1, 
-                26.1, 27.2, 18.2, 29.1, 30.0};
-
-    double vec_dob[] = {13.2, 13.5, 10.3, 12.0,
-                        20.1, 50.3, 15.4};
-
-    sort_vector(vec, N);
-    printf("Vector values: ");
-    print_vector(vec, N);
-
-    size_t vec_size = sizeof(vec_dob)/sizeof(vec_dob[0]);
-    puts("Vector double: ");
-    sort_vector(vec_dob, vec_size);
-    print_vector(vec_dob, vec_size);
-    
-    printf("Median: %.2f\n", find_median(vec_dob, vec_size));
-
-    printf("Mean vector %.2f\n", mean_vector(vec, N));
-
-    print_quantile(vec_dob, vec_size);
-
-    return EXIT_SUCCESS;
-}
 
 void print_vector(double * vec, size_t vec_size) {
     for (size_t i = 0; i < vec_size; i++)
@@ -80,6 +42,31 @@ void sort_vector(double * vec, size_t vec_size) {
 
 double mean_vector(double * vec, size_t vec_size) {
     return sum_vector(vec, vec_size) / vec_size;
+}
+
+static double product(double a[], size_t n) {
+    double p = 1.0;
+    for (size_t i = 0; i < n; i++) {
+        p *= a[i];
+    }
+    return p;
+}
+
+// Unsafe. See function declaration for details.
+double geom_mean_unsafe(double a[], size_t n) {
+    return pow(product(a, n), (double) 1.0/n);
+}
+
+static double sum_log(double a[], size_t n) {
+    double s_log = 0.0;
+    for (size_t i = 0; i < n; i++) {
+        s_log += log(a[i]);
+    }
+    return s_log;
+}
+// Safe. See function declaration for details.
+double geom_mean(double a[], size_t n) {
+    return exp(sum_log(a, n)/n);
 }
 
 double find_median(double * vec, size_t vec_size) {
