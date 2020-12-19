@@ -29,46 +29,46 @@ Compiler flags: -Wall -Werror -lm
 #define FREE_MEM(p) free_mem((void**)&p)
 
 int main(void) {
-    int x[MAX] = {1, 2, 3, 4, 5};
-    int y[MAX] = {10, 20, 30, 40, 50};
+    double x[MAX] = {1.0, 2.0, 3.0, 4.0, 5.0};
+    double y[MAX] = {10.0, 20.0, 30.0, 40.0, 50.0};
 
-    int * ones_vec = vec_ones(MAX);
+    double * ones_vec = vec_ones(MAX);
     printf("Vector ones: "); 
     print_vectors(ones_vec, MAX);
 
-    int * add_res = add_vectors(x, y, MAX);
+    double * add_res = add_vectors(x, y, MAX);
     printf("Vector addition: ");
     print_vectors(add_res, MAX);
 
-    int * mul_res = multiply_vectors(x, y, MAX);
+    double * mul_res = multiply_vectors(x, y, MAX);
     printf("Vector multiplication: ");
     print_vectors(mul_res, MAX);
 
     // Print the sum x and y
-    int sum_x = sum_vectors(x, MAX);
-    int sum_y = sum_vectors(y, MAX);
-    printf("Sum vec x: %d and y: %d\n", sum_x, sum_y);
+    double sum_x = sum(x, MAX);
+    double sum_y = sum(y, MAX);
+    printf("Sum vec x: %.2f and y: %.2f\n", sum_x, sum_y);
 
     // Print mean x and y
-    float mean_x = mean_vectors(sum_x, MAX);
-    float mean_y = mean_vectors(sum_y, MAX);
+    double mean_x = mean(sum_x, MAX);
+    double mean_y = mean(sum_y, MAX);
 
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
 
     printf("Dot product: %.2f\n", 
-        compute_dot_product(x,y, MAX));
+        dot_product(x,y, MAX));
 
     printf("Sum of square x: %.2f\n",
-        compute_sum_of_square(x, MAX));
+        sum_of_square(x, MAX));
     
     printf("Sum of square y: %.2f\n",
-        compute_sum_of_square(y, MAX));
+        sum_of_square(y, MAX));
 
     printf("Magnitude x: %.4f\n",
-        compute_magnitude(x, MAX));
+        magnitude(x, MAX));
     
     printf("X and Y distance: %.4f\n",
-        compute_vector_distance(x, y, MAX));
+        distance(x, y, MAX));
 
     FREE_MEM(add_res);
     FREE_MEM(mul_res);
