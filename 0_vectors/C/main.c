@@ -23,10 +23,6 @@ Compiler flags: -Wall -Werror -lm
 * this way I will only pass one single array size
 * when passing two arrays. Not safe!
 */
-#define MAX 5
-
-// Shorten function call to free memory.
-#define FREE_MEM(p) free_mem((void**)&p)
 
 int main(void) {
     double x[MAX] = {1.0, 2.0, 3.0, 4.0, 5.0};
@@ -55,8 +51,10 @@ int main(void) {
 
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
 
-    printf("Geometric mean: %.2f\n", 
-        geom_mean_unsafe(y, MAX));
+    printf("Geometric mean unsafe x: %.2f\n", 
+        geom_mean_unsafe(x, MAX));
+    
+    printf("Geometric mean x: %.2f\n", geom_mean(x, MAX));
 
     printf("Dot product: %.2f\n", 
         dot_product(x,y, MAX));

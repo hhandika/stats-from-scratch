@@ -19,11 +19,6 @@ Distance
 #include <math.h> 
 #include "vector.h"
 
-#define MAX 5
-
-// Shorten function call to free memory.
-#define FREE_MEM(p) free_mem((void**)&p)
-
 void print_vectors(double vec[], size_t vec_size) {
     for (size_t i = 0; i < vec_size; i++) {
         printf("%.2f ", vec[i]);
@@ -112,12 +107,17 @@ double geom_mean_unsafe(double a[], size_t n) {
     return pow(product(a, n), (double) 1/n);
 }
 
+static double sum_log(double a[], size_t n) {
+    double s_log = 0.0;
+    for (size_t i = 0; i < n; i++) {
+        s_log += log(a[i]);
+    }
+    return s_log;
+}
 // Safe. See function declaration for details.
-// double geom_mean(double a[], size_t n) {
-
-// }
-
-
+double geom_mean(double a[], size_t n) {
+    return exp(sum_log(a, n)/n);
+}
 
 // Dot product will be use to compute sum of square
 double dot_product(double x[], double y[], size_t arr_size) {
