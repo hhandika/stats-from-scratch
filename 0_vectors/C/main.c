@@ -55,6 +55,9 @@ int main(void) {
 
     printf("Mean x: %.2f & mean y: %.2f\n", mean_x, mean_y);
 
+    printf("Geometric mean: %.2f\n", 
+        geom_mean_unsafe(y, MAX));
+
     printf("Dot product: %.2f\n", 
         dot_product(x,y, MAX));
 
