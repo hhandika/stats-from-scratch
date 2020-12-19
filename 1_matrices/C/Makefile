@@ -13,4 +13,4 @@ clean:
 	rm *.o
 
 cleanall:
-	rm *.o bin/c-vec
+	rm *.o bin/c-mat
