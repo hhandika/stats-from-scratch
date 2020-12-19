@@ -120,7 +120,7 @@ double geom_mean_unsafe(double a[], size_t n) {
 
 
 // Dot product will be use to compute sum of square
-double dot_product(double * x, double * y, size_t arr_size) {
+double dot_product(double x[], double y[], size_t arr_size) {
     double sum = 0.0;
     for (size_t i = 0; i < arr_size; i++) {
         sum += x[i] * y[i];
@@ -128,15 +128,15 @@ double dot_product(double * x, double * y, size_t arr_size) {
     return sum;
 }
 
-double sum_of_square(double * x, size_t arr_size) {
-    return dot_product(x, x, arr_size);
+double sum_of_square(double a[], size_t arr_size) {
+    return dot_product(a, a, arr_size);
 }
 
-double magnitude(double * x, size_t arr_size) {
-    return sqrt(sum_of_square(x, arr_size));
+double magnitude(double a[], size_t arr_size) {
+    return sqrt(sum_of_square(a, arr_size));
 }
 
-double distance(double * x, double * y, size_t arr_size) {
+double distance(double x[], double y[], size_t arr_size) {
     double * vec_subs = substract_vectors(x, y, arr_size);
     double mag = magnitude(vec_subs, arr_size);
     FREE_MEM(vec_subs);
