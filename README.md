@@ -23,6 +23,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Multiplication        | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Summation             | ✔   |     | ✔    | ✔   | ✔                     | ✔      |       | ✔   |
 | - Mean                  | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
+| - Geometric mean        | ✔   |     |      |     |                       |        |       |     |
 | - Dot product           | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Sum of square         | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Magnitude             | ✔   |     | ✔    |     |                       |        |       | ✔   |
