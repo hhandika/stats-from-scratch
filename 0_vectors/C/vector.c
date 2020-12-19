@@ -104,7 +104,7 @@ static double product(double a[], size_t n) {
 
 // Unsafe. See function declaration for details.
 double geom_mean_unsafe(double a[], size_t n) {
-    return pow(product(a, n), (double) 1/n);
+    return pow(product(a, n), (double) 1.0/n);
 }
 
 static double sum_log(double a[], size_t n) {

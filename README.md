@@ -18,18 +18,18 @@ Of course, I will be grateful if it can be used beyond those goals.
 | Computation             | C   | C++ | Rust | Go  | TypeScript/JavaScript | Python | Julia | R   |
 | ----------------------- | --- | --- | ---- | --- | --------------------- | ------ | ----- | --- |
 | <i>Vector Operation</i> |     |     |      |     |                       |        |       |     |
-| - Addition              | ✔   |     | ✔    |     | ✔                     | ✔      |       | ✔   |
-| - Substraction          | ✔   |     | ✔    |     | ✔                     | ✔      |       | ✔   |
-| - Multiplication        | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
-| - Summation             | ✔   |     | ✔    | ✔   | ✔                     | ✔      |       | ✔   |
-| - Mean                  | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
+| - Addition              | ✔   |     | ✔    |     | ✔                    | ✔      |       | ✔   |
+| - Substraction          | ✔   |     | ✔    |     | ✔                   | ✔      |       | ✔   |
+| - Multiplication        | ✔   |     | ✔    |     |                      | ✔      |       | ✔   |
+| - Summation             | ✔   |     | ✔    | ✔   | ✔                   | ✔      |       | ✔   |
+| - Mean                  | ✔   |     | ✔    |     |                      | ✔      |       | ✔   |
 | - Geometric mean        | ✔✔ |     |      |     |                       |        |       |     |
 | - Dot product           | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Sum of square         | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Magnitude             | ✔   |     | ✔    |     |                       |        |       | ✔   |
 | - Distance              | ✔   |     | ✔    |     |                       |        |       | ✔   |
 | <i>Matrix Operation</i> |     |     |      |     |                       |        |       |     |
-| - Identity matrix       | ✔   |     | ✔    |     | ✔                     |        |       | ✔   |
+| - Identity matrix       | ✔   |     | ✔    |     | ✔                    |        |       | ✔   |
 | <i>Central Tendency</i> |     |     |      |     |                       |        |       |     |
 | - Sort                  | ✔   |     | ✔    |     |                       |        |       |     |
 | - Mean                  | ✔   |     | ✔    |     |                       |        |       |     |
@@ -41,7 +41,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Range                 | ✔   |     | ✔    |     |                       |        |       |     |
 | - Variance              | ✔   |     |      |     |                       |        |       |     |
 | - Std deviation         | ✔   |     |      |     |                       |        |       |     |
-| Euler number            | ✔   | ✔   | ✔    | ✔   | ✔                     | ✔      | ✔     |     |
+| Euler number            | ✔   | ✔   | ✔    | ✔   | ✔                   | ✔      | ✔     |     |
 
 ## State of Code
 
