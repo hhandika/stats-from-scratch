@@ -1,54 +1,4 @@
-/*
-Heru Handika
-28 October 2020
-Dispersion
-
-Compiler flags:
--Wall -Werror -lm
-*/
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <math.h>
-
-#define N 10
-
-typedef struct {
-    int min;
-    int max;
-} Range;
-
-void print_vector(int * vec, size_t vec_size); 
-int max_vector(int * vec, size_t vec_size);
-int min_vector(int * vec, size_t vec_size);
-Range print_range(int * vec, size_t vec_size);
-double sum_vector(int * vec, size_t vec_size);
-double mean_vector(int * vec, size_t vec_size);
-double compute_dot_product(double * x, double * y, size_t arr_size);
-double compute_sum_of_square(double * x, size_t arr_size);
-double * compute_deviation_mean(int * vec, size_t vec_size);
-double compute_variance(int * vec, size_t vec_size);
-double compute_std_dev(int * vec, size_t vec_size);
-
-int main(void) {
-    int vec[N] = {10, 20, 23, 24, 25, 
-                26, 27, 28, 29, 30};
-
-    printf("Vector values: ");
-    print_vector(vec, N);
-
-    Range values = print_range(vec, N);
-    printf("Value ranges: %d-%d\n", 
-        values.min, values.max);
-
-    printf("Variance: %.4f\n", 
-        compute_variance(vec, N));
-    printf("Standard deviation: %.4f\n", 
-        compute_std_dev(vec, N));
-
-    return EXIT_SUCCESS;
-}
+#include "disp.h"
 
 void print_vector(int * vec, size_t vec_size) {
     for (size_t i = 0; i < vec_size; i++)
@@ -130,4 +80,9 @@ double compute_variance(int * vec, size_t vec_size) {
 double compute_std_dev(int * vec, size_t vec_size) {
     double var = compute_variance(vec, vec_size);
     return sqrt(var);
+}
+
+double standard_error(int a[], size_t n) {
+    double sqrt_n = sqrt((double) n);
+    return compute_std_dev(a, n) / sqrt_n;
 }
