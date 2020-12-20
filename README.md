@@ -46,7 +46,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 
 ## State of Code
 
-The code is still at its infancy. Please, expect significant re-structure and refactoring of the code. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. 
+The code is still at its infancy. Please, expect significant re-structuring and refactoring of the code. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. 
 
 ## References:
 
