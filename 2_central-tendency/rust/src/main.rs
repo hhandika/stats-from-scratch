@@ -26,6 +26,8 @@ fn main() {
     
     println!("Sort vector: {:?}", desc::sort_f64(&vec_dob));
     println!("Median vector: {}", desc::median(&vec_dob));
+    println!("Geometric mean: {:.4}", desc::geom_mean_unsafe(&vec_dob));
+    println!("Geometric mean safe: {:.4}", desc::geom_mean(&vec_dob));
 
     desc::print_quantile(&vec_dob)
    

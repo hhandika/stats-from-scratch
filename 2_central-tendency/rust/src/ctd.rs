@@ -26,6 +26,34 @@ pub mod stat_desc {
         let len = vec.len();
         sum(vec) as f64 / len as f64
     }
+
+    fn product(vec: &Vec<f64>) -> f64 {
+        let mut p = 1.0;
+        for &i in vec.iter() {
+            p *= i;
+        }
+        p
+    }
+
+    pub fn geom_mean_unsafe(vec: &Vec<f64>) -> f64 {
+        let n = vec.len();
+        let p = product(&vec);
+        p.powf(1.0/n as f64)
+    }
+
+    fn sum_log(vec: &Vec<f64>) -> f64 {
+        let mut s_log: f64 = 0.0;
+        for &i in vec.iter() {
+            s_log += i.ln();
+        }
+        s_log
+    }
+
+    pub fn geom_mean(vec: &Vec<f64>) -> f64 {
+        let n = vec.len();
+        let log_av = sum_log(&vec) / n as f64;
+        log_av.exp()
+    }
     
     pub fn min(vec: &Vec<i32>) -> i32 {
         let min = vec.iter().min();
