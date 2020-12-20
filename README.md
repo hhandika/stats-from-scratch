@@ -23,7 +23,6 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Multiplication        | ✔   |     | ✔    |     |                      | ✔      |       | ✔   |
 | - Summation             | ✔   |     | ✔    | ✔   | ✔                   | ✔      |       | ✔   |
 | - Mean                  | ✔   |     | ✔    |     |                      | ✔      |       | ✔   |
-| - Geometric mean        | ✔✔ |     |      |     |                       |        |       |     |
 | - Dot product           | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Sum of square         | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Magnitude             | ✔   |     | ✔    |     |                       |        |       | ✔   |
@@ -33,6 +32,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | <i>Central Tendency</i> |     |     |      |     |                       |        |       |     |
 | - Sort                  | ✔   |     | ✔    |     |                       |        |       |     |
 | - Mean                  | ✔   |     | ✔    |     |                       |        |       |     |
+| - Geometric mean        | ✔✔ |     | ✔✔   |     |                       |        |       |     |
 | - Median                | ✔   |     | ✔    |     |                       |        |       |     |
 | - Quantile              | ✔   |     | ✔    |     |                       |        |       |     |
 | <i>Dispersion</i>       |     |     |      |     |                       |        |       |     |
