@@ -6,7 +6,7 @@ DEPS= ctd.h
 %.o: %.c $(DEPS)
 	$(CC) -c $< $(CFLAGS) -o $@
 
-c-cdt: $(OBJS)
+c-ctd: $(OBJS)
 	$(CC) $^ $(CFLAGS) -o $(TARGET)
 
 clean:
