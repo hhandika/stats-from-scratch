@@ -53,3 +53,5 @@ The code is still at its infancy. Please, expect significant re-structure and re
 Deisenroth, M.P., Faisal, A.A. and Ong, C.S., 2020. <i>Mathematics for machine learning</i>. Cambridge University Press.
 
 Grus, J., 2019. <i>Data science from scratch: first principles with python</i>. O'Reilly Media.
+
+Press, W.H., Teukolsky, S.A., Vetterling, W.T. and Flannery, B.P., 2007. Numerical recipes 3rd edition: The art of scientific computing. Cambridge university press.
