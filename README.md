@@ -41,6 +41,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Range                 | ✔   |     | ✔    |     |                       |        |       |     |
 | - Variance              | ✔   |     |      |     |                       |        |       |     |
 | - Std deviation         | ✔   |     |      |     |                       |        |       |     |
+| - Std error             | ✔   |     |      |     |                       |        |       |     |
 | Euler number            | ✔   | ✔   | ✔    | ✔   | ✔                   | ✔      | ✔     |     |
 
 ## State of Code
