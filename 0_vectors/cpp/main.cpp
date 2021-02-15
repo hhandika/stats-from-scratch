@@ -24,6 +24,9 @@ int main (void) {
     vector<double> sub_res = substract_vector(x, y);
     cout << "Vector substraction: ";
     print_vector(sub_res);
-
+    
+    vector<double> ones = vector_ones(5);
+    cout << "Vector ones: ";
+    print_vector(ones);
 }
 

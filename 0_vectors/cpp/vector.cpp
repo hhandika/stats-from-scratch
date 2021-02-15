@@ -43,3 +43,14 @@ vector<double> substract_vector(vector<double> x, vector<double> y) {
 
     return res;
 }
+
+vector<double> vector_ones(int arr_size) {
+    vector<double> res;
+    res.reserve(arr_size);
+
+    for (int i = 0; i < arr_size; i++) {
+        res.push_back(1);
+    }
+
+    return res;
+}
