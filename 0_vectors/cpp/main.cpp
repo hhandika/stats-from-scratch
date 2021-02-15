@@ -17,6 +17,10 @@ int main (void) {
 
     print_vector(x);
 
+    vector<double> ones = vector_ones(5);
+    cout << "Vector ones: ";
+    print_vector(ones);
+
     vector<double> add_res = add_vector(x, y);
     cout << "Vector addition: ";
     print_vector(add_res);
@@ -25,8 +29,8 @@ int main (void) {
     cout << "Vector substraction: ";
     print_vector(sub_res);
     
-    vector<double> ones = vector_ones(5);
-    cout << "Vector ones: ";
-    print_vector(ones);
+    vector<double> mul_res = multiply_vector(x, y);
+    cout << "Vector multiplication: ";
+    print_vector(mul_res);
 }
 

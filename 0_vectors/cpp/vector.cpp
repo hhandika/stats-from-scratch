@@ -20,6 +20,17 @@ void print_vector(vector<double> x) {
     cout << endl;
 }
 
+vector<double> vector_ones(int arr_size) {
+    vector<double> res;
+    res.reserve(arr_size);
+
+    for (int i = 0; i < arr_size; i++) {
+        res.push_back(1);
+    }
+
+    return res;
+}
+
 vector<double> add_vector(vector<double> x, vector<double> y) {
     assert(x.size() == y.size());
     vector<double> res;
@@ -44,13 +55,14 @@ vector<double> substract_vector(vector<double> x, vector<double> y) {
     return res;
 }
 
-vector<double> vector_ones(int arr_size) {
+vector<double> multiply_vector(vector<double> x, vector<double> y) {
+    assert(x.size() == y.size());
     vector<double> res;
-    res.reserve(arr_size);
-
-    for (int i = 0; i < arr_size; i++) {
-        res.push_back(1);
-    }
+    res.reserve(x.size());
+    
+    for (int i = 0; i < x.size(); i++) {
+        res.push_back(x[i] * y[i]);
+    }          
 
     return res;
 }
