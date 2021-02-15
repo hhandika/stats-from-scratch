@@ -18,11 +18,11 @@ Of course, I will be grateful if it can be used beyond those goals.
 | Computation             | C   | C++ | Rust | Go  | TypeScript/JavaScript | Python | Julia | R   |
 | ----------------------- | --- | --- | ---- | --- | --------------------- | ------ | ----- | --- |
 | <i>Vector Operation</i> |     |     |      |     |                       |        |       |     |
-| - Addition              | ✔   |     | ✔    |     | ✔                    | ✔      |       | ✔   |
-| - Substraction          | ✔   |     | ✔    |     | ✔                   | ✔      |       | ✔   |
-| - Multiplication        | ✔   |     | ✔    |     |                      | ✔      |       | ✔   |
-| - Summation             | ✔   |     | ✔    | ✔   | ✔                   | ✔      |       | ✔   |
-| - Mean                  | ✔   |     | ✔    |     |                      | ✔      |       | ✔   |
+| - Addition              | ✔   |✔   | ✔    |     | ✔                    | ✔      |       | ✔   |
+| - Substraction          | ✔   |✔   | ✔    |     | ✔                   | ✔      |       | ✔   |
+| - Multiplication        | ✔   |✔   | ✔    |     |                      | ✔      |       | ✔   |
+| - Summation             | ✔   |✔   | ✔    | ✔   | ✔                   | ✔      |       | ✔   |
+| - Mean                  | ✔   |✔   | ✔    |     |                      | ✔      |       | ✔   |
 | - Dot product           | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Sum of square         | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Magnitude             | ✔   |     | ✔    |     |                       |        |       | ✔   |

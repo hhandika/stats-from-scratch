@@ -66,3 +66,18 @@ vector<double> multiply_vector(vector<double> x, vector<double> y) {
 
     return res;
 }
+
+double sum(vector<double> vec) {
+    double sum;
+    for (auto& i : vec) {
+        sum += i;
+    }
+
+    return sum;
+}
+
+double mean(vector<double> vec) {
+    double total = sum(vec);
+
+    return total / vec.size();
+}

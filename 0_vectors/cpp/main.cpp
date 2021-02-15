@@ -32,5 +32,11 @@ int main (void) {
     vector<double> mul_res = multiply_vector(x, y);
     cout << "Vector multiplication: ";
     print_vector(mul_res);
+
+    double total = sum(x);
+    cout << "Sum vector x: " << total << endl;
+
+    double mean_vec = mean(x);
+    cout << "Mean vector x: " << mean_vec << endl;
 }
 
