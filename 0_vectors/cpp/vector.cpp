@@ -76,7 +76,7 @@ vector<double> cumsum(vector<double> vec) {
     vector<double> res;
 
     double sum = 0;
-    for (auto&i : vec) {
+    for (auto& i : vec) {
         sum += i;
         res.push_back(sum);
     }

@@ -40,6 +40,10 @@ int main (void) {
     cout << "Cumsum vector x: ";
     print_vector(csum);
 
+    vector<double> csum_gen = cumsum_gen<double>(x);
+    cout << "Cumsum vector gen x: ";
+    print_vector(csum_gen);
+
     double mean_vec = mean(x);
     cout << "Mean vector x: " << mean_vec << endl;
 }
