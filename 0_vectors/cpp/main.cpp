@@ -36,6 +36,10 @@ int main (void) {
     double total = sum(x);
     cout << "Sum vector x: " << total << endl;
 
+    vector<double> csum = cumsum(x);
+    cout << "Cumsum vector x: ";
+    print_vector(csum);
+
     double mean_vec = mean(x);
     cout << "Mean vector x: " << mean_vec << endl;
 }

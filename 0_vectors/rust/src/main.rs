@@ -25,11 +25,14 @@ fn main() {
     
     println!("Sum x: {}", vec::sum_vectors(&x));
     println!("Sum y: {}", vec::sum_vectors(&y));
+    println!("Cumsum x: {:?}", vec::cumsum(&x));
     println!("Mean x: {:.2}", vec::mean_vectors(&x));
     println!("Mean y: {:.2}", vec::mean_vectors(&y));
 
     println!("Sum of square x: {:.2}", 
         vec::calculate_sum_of_square(&x));
+
+ 
     println!("Sum of square y: {:.2}", 
         vec::calculate_sum_of_square(&y));
     println!("X & Y distance: {:.4}", 

@@ -49,6 +49,17 @@ pub mod vector {
         sum
     }
 
+    pub fn cumsum(x: &[i32]) -> Vec<i32> {
+        let mut res = Vec::new();
+        let mut sum = 0;
+        for &i in x {
+            sum += i;
+            res.push(sum);
+        }
+        
+        res
+    }
+
     pub fn mean_vectors(vec: &Vec<i32>) -> f64 {
         let n = vec.len();
         let mean = sum_vectors(vec) as f64 / n as f64;

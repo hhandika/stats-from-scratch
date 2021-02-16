@@ -15,4 +15,5 @@ vector<double> vector_ones(int arr_size);
 vector<double> multiply_vector(vector<double> x, vector<double> y);
 
 double sum(vector<double> vec);
+vector<double> cumsum(vector<double> vec);
 double mean(vector<double> vec);

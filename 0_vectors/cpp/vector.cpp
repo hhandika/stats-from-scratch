@@ -72,6 +72,18 @@ double sum(vector<double> vec) {
     return sum;
 }
 
+vector<double> cumsum(vector<double> vec) {
+    vector<double> res;
+
+    double sum = 0;
+    for (auto&i : vec) {
+        sum += i;
+        res.push_back(sum);
+    }
+
+    return res;
+}
+
 double mean(vector<double> vec) {
     double total = sum(vec);
 

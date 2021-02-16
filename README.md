@@ -22,6 +22,7 @@ Of course, I will be grateful if it can be used beyond those goals.
 | - Substraction          | ✔   |✔   | ✔    |     | ✔                   | ✔      |       | ✔   |
 | - Multiplication        | ✔   |✔   | ✔    |     |                      | ✔      |       | ✔   |
 | - Summation             | ✔   |✔   | ✔    | ✔   | ✔                   | ✔      |       | ✔   |
+| - Cumulative sum        | ✔   |✔   | ✔    |     |                       |        |       |     |
 | - Mean                  | ✔   |✔   | ✔    |     |                      | ✔      |       | ✔   |
 | - Dot product           | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
 | - Sum of square         | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
