@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+#include <cassert>
+
 using namespace std;
 
 void print_vector(vector<double> x);

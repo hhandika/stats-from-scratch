@@ -4,10 +4,6 @@ Heru Handika
 Vector operation
 */
 
-#include <iostream>
-#include <vector>
-#include <cassert>
-
 #include "vector.hpp"
 
 using namespace std;
