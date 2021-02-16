@@ -43,6 +43,10 @@ int main(void) {
     double sum_y = sum(y, MAX);
     printf("Sum vec x: %.2f and y: %.2f\n", sum_x, sum_y);
 
+    double * csum = cumsum(x, MAX);
+    printf("Cumsum x: ");
+    print_vectors(csum, MAX);
+
     // Print mean x and y
     double mean_x = mean(sum_x, MAX);
     double mean_y = mean(sum_y, MAX);
@@ -67,5 +71,6 @@ int main(void) {
     FREE_MEM(add_res);
     FREE_MEM(mul_res);
     FREE_MEM(ones_vec);
+    FREE_MEM(csum);
     return 0;
 }

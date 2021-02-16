@@ -19,6 +19,7 @@ double * add_vectors(double * x, double * y, size_t arr_size);
 double * substract_vectors(double x[], double y[], size_t arr_size);
 double * multiply_vectors(double * x, double * y, size_t arr_size);
 double sum(double * vec, size_t arr_size);
+double * cumsum(double vec[], size_t arr_size);
 double mean(double sum, size_t arr_size);
 double dot_product(double * x, double * y, size_t arr_size);
 double sum_of_square(double * x, size_t arr_size);

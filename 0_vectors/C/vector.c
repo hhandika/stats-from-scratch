@@ -85,6 +85,19 @@ double sum(double vec[], size_t arr_size) {
     return sum;
 }
 
+double * cumsum(double vec[], size_t arr_size) {
+    double * res = NULL;
+    allocate_mem(&res, arr_size);
+    
+    double sum = 0;
+    for (size_t i = 0; i < arr_size; i++) {
+        sum += vec[i];
+        res[i] = sum;
+    }
+
+    return res;
+}
+
 double mean(double sum, size_t arr_size) {
     return (double) sum / arr_size;
 }
