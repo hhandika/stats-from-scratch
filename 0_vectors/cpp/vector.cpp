@@ -104,3 +104,31 @@ double mean(vector<double> vec)
 
     return total / vec.size();
 }
+
+double dot_product(vector<double> x, vector<double> y)
+{
+    assert(x.size() == y.size());
+    double sum = 0.0;
+    for (int i = 0; i < x.size(); i++)
+    {
+        sum += x[i] * y[i];
+    }
+
+    return sum;
+}
+
+double sum_of_square(vector<double> a)
+{
+    return dot_product(a, a);
+}
+
+double magnitude(vector<double> a)
+{
+    return sqrt(sum_of_square(a));
+}
+
+double distance(vector<double> x, vector<double> y)
+{
+    vector<double> subs = substract_vector(x, y);
+    return magnitude(subs);
+}

@@ -34,8 +34,7 @@ int main(void)
     cout << "Vector multiplication: ";
     print_vector(mul_res);
 
-    double total = sum(x);
-    cout << "Sum vector x: " << total << endl;
+    cout << "Sum vector x: " << sum(x) << endl;
 
     vector<double> csum = cumsum(x);
     cout << "Cumsum vector x: ";
@@ -45,6 +44,12 @@ int main(void)
     cout << "Cumsum vector gen x: ";
     print_vector(csum_gen);
 
-    double mean_vec = mean(x);
-    cout << "Mean vector x: " << mean_vec << endl;
+    cout << "Mean vector x: " << mean(x) << endl;
+
+    cout << "Dot product: " << dot_product(x, y) << endl;
+
+    cout << "Sum of square X: " << sum_of_square(x) << endl;
+    cout << "Sum of square Y: " << sum_of_square(y) << endl;
+    cout << "Magnitude X: " << magnitude(x) << endl;
+    cout << "Distance: " << distance(x, y) << endl;
 }
