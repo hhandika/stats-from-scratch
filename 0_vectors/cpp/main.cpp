@@ -11,7 +11,8 @@ Vector operation
 
 using namespace std;
 
-int main (void) {
+int main(void)
+{
     vector<double> x = {1.0, 2.0, 3.0, 4.0, 5.0};
     vector<double> y = {10.0, 20.0, 30.0, 40.0, 50.0};
 
@@ -28,7 +29,7 @@ int main (void) {
     vector<double> sub_res = substract_vector(x, y);
     cout << "Vector substraction: ";
     print_vector(sub_res);
-    
+
     vector<double> mul_res = multiply_vector(x, y);
     cout << "Vector multiplication: ";
     print_vector(mul_res);
@@ -47,4 +48,3 @@ int main (void) {
     double mean_vec = mean(x);
     cout << "Mean vector x: " << mean_vec << endl;
 }
-

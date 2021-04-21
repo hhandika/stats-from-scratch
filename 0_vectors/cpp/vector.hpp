@@ -5,8 +5,6 @@
 #include <vector>
 #include <cassert>
 
-
-
 using namespace std;
 
 void print_vector(vector<double> x);
@@ -23,11 +21,13 @@ double sum(vector<double> vec);
 vector<double> cumsum(vector<double> vec);
 
 template <typename T>
-vector<T> cumsum_gen(vector<T> vec) {
+vector<T> cumsum_gen(vector<T> vec)
+{
     vector<T> res;
 
     T sum = 0;
-    for (auto& i : vec) {
+    for (auto &i : vec)
+    {
         sum += i;
         res.push_back(sum);
     }
