@@ -3,7 +3,6 @@ Heru Handika
 27 October 2020
 Vector operation in go
 */
-
 package main
 
 import (
