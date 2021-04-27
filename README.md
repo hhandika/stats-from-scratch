@@ -15,44 +15,44 @@ Of course, I will be grateful if it can be used beyond those goals.
 
 <!-- Need update! -->
 
-| Computation             | C   | C++ | Rust | Go  | TypeScript/JavaScript | Python | Julia | R   |
-| ----------------------- | --- | --- | ---- | --- | --------------------- | ------ | ----- | --- |
-| <i>Vector Operation</i> |     |     |      |     |                       |        |       |     |
-| - Addition              | ✔   |✔   | ✔    |✔   | ✔                    | ✔      |       | ✔   |
-| - Substraction          | ✔   |✔   | ✔    |✔   | ✔                   | ✔      |       | ✔   |
-| - Multiplication        | ✔   |✔   | ✔    |✔   |                      | ✔      |       | ✔   |
-| - Summation             | ✔   |✔   | ✔    |✔   | ✔                   | ✔      |       | ✔   |
-| - Cumulative sum        | ✔   |✔   | ✔    |✔    |                       |        |       |     |
-| - Mean                  | ✔   |✔   | ✔    |✔    |                      | ✔      |       | ✔   |
-| - Dot product           | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
-| - Sum of square         | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
-| - Magnitude             | ✔   |     | ✔    |     |                       |        |       | ✔   |
-| - Distance              | ✔   |     | ✔    |     |                       |        |       | ✔   |
-| <i>Matrix Operation</i> |     |     |      |     |                       |        |       |     |
-| - Identity matrix       | ✔   |     | ✔    |     | ✔                    |        |       | ✔   |
-| <i>Central Tendency</i> |     |     |      |     |                       |        |       |     |
-| - Sort                  | ✔   |     | ✔    |     |                       |        |       |     |
-| - Mean                  | ✔   |     | ✔    |     |                       |        |       |     |
-| - Geometric mean        | ✔✔ |     | ✔✔   |     |                       |        |       |     |
-| - Median                | ✔   |     | ✔    |     |                       |        |       |     |
-| - Quantile              | ✔   |     | ✔    |     |                       |        |       |     |
-| <i>Dispersion</i>       |     |     |      |     |                       |        |       |     |
-| - Min                   | ✔   |     | ✔    |     |                       |        |       |     |
-| - Max                   | ✔   |     | ✔    |     |                       |        |       |     |
-| - Range                 | ✔   |     | ✔    |     |                       |        |       |     |
-| - Variance              | ✔   |     |      |     |                       |        |       |     |
-| - Std deviation         | ✔   |     |      |     |                       |        |       |     |
-| - Std error             | ✔   |     |      |     |                       |        |       |     |
-| Euler number            | ✔   | ✔   | ✔    | ✔   | ✔                   | ✔      | ✔     |     |
+| Computation        | C   | C++ | Rust | Go  | TypeScript/JavaScript | Python | Julia | R   |
+| ------------------ | --- | --- | ---- | --- | --------------------- | ------ | ----- | --- |
+| _Vector Operation_ |     |     |      |     |                       |        |       |     |
+| - Addition         | ✔   | ✔   | ✔    | ✔   | ✔                     | ✔      |       | ✔   |
+| - Substraction     | ✔   | ✔   | ✔    | ✔   | ✔                     | ✔      |       | ✔   |
+| - Multiplication   | ✔   | ✔   | ✔    | ✔   |                       | ✔      |       | ✔   |
+| - Summation        | ✔   | ✔   | ✔    | ✔   | ✔                     | ✔      |       | ✔   |
+| - Cumulative sum   | ✔   | ✔   | ✔    | ✔   |                       |        |       |     |
+| - Mean             | ✔   | ✔   | ✔    | ✔   |                       | ✔      |       | ✔   |
+| - Dot product      | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
+| - Sum of square    | ✔   |     | ✔    |     |                       | ✔      |       | ✔   |
+| - Magnitude        | ✔   |     | ✔    |     |                       |        |       | ✔   |
+| - Distance         | ✔   |     | ✔    |     |                       |        |       | ✔   |
+| _Matrix Operation_ |     |     |      |     |                       |        |       |     |
+| - Identity matrix  | ✔   |     | ✔    |     | ✔                     |        |       | ✔   |
+| _Central Tendency_ |     |     |      |     |                       |        |       |     |
+| - Sort             | ✔   |     | ✔    |     |                       |        |       |     |
+| - Mean             | ✔   |     | ✔    |     |                       |        |       |     |
+| - Geometric mean   | ✔✔  |     | ✔✔   |     |                       |        |       |     |
+| - Median           | ✔   |     | ✔    |     |                       |        |       |     |
+| - Quantile         | ✔   |     | ✔    |     |                       |        |       |     |
+| _Dispersion_       |     |     |      |     |                       |        |       |     |
+| - Min              | ✔   |     | ✔    |     |                       |        |       |     |
+| - Max              | ✔   |     | ✔    |     |                       |        |       |     |
+| - Range            | ✔   |     | ✔    |     |                       |        |       |     |
+| - Variance         | ✔   |     |      |     |                       |        |       |     |
+| - Std deviation    | ✔   |     |      |     |                       |        |       |     |
+| - Std error        | ✔   |     |      |     |                       |        |       |     |
+| Euler number       | ✔   | ✔   | ✔    | ✔   | ✔                     | ✔      | ✔     |     |
 
 ## State of Code
 
-The code is still at its infancy. Please, expect significant re-structuring and refactoring of the code. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process. 
+The code is still at its infancy. Please, expect significant re-structuring and refactoring of the code. I tend to write C code first and continue with Rust. The rest of the languange implementation will come in a random order depending on my mood that day. Usually, higher level languages will show up later in the process.
 
 ## References:
 
-Deisenroth, M.P., Faisal, A.A. and Ong, C.S., 2020. <i>Mathematics for machine learning</i>. Cambridge University Press.
+Deisenroth, M.P., Faisal, A.A. and Ong, C.S., 2020. _Mathematics for machine learning_. Cambridge University Press.
 
-Grus, J., 2019. <i>Data science from scratch: first principles with python</i>. O'Reilly Media.
+Grus, J., 2019. _Data science from scratch: first principles with python_. O'Reilly Media.
 
 Press, W.H., Teukolsky, S.A., Vetterling, W.T. and Flannery, B.P., 2007. Numerical recipes 3rd edition: The art of scientific computing. Cambridge university press.
