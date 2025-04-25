@@ -71,13 +71,11 @@ double geom_mean(double a[], size_t n) {
 
 double find_median(double * vec, size_t vec_size) {
     sort_vector(vec, vec_size);
-    // Get mid point
     size_t hi_midpoint = vec_size / 2;
-    // If even
+
     if (vec_size % 2 == 0) {
         return (double)(vec[hi_midpoint - 1] + vec[hi_midpoint]) / 2.0;
     }
-    // if odd
     return (double) vec[hi_midpoint];
 }
 
